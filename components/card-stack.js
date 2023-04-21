@@ -21,7 +21,7 @@ const trans = (r, s) =>
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 function Deck({ contents }) {
-  const cards = contents.map((item) => item.image);
+  const cards = contents.map((item) => item?.image);
   const [clicked, setClicked] = useState(false);
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, api] = useSprings(cards.length, (i) => ({

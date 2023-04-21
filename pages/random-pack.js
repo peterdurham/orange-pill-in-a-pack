@@ -6,9 +6,10 @@ import Layout from "@/components/layout";
 import Button from "@/components/button";
 import Link from "next/link";
 
-const rares = setList.filter((card) => card.rarity === "R"); // 113
-const uncommons = setList.filter((card) => card.rarity === "U"); // 94
 const commons = setList.filter((card) => card.rarity === "C"); // 83
+const rares = setList.filter((card) => card.rarity === "R"); // 113
+const ultraRares = setList.filter((card) => card.rarity === "UR"); // 94
+const legendaries = setList.filter((card) => card.rarity === "L"); // 83
 
 const RandomPack = () => {
   const [contents, setContents] = useState([]);
@@ -16,19 +17,26 @@ const RandomPack = () => {
 
   useEffect(() => {
     if (!clicked) {
-      const commonsOpened = Array.from({ length: 11 }, () =>
-        Math.floor(Math.random() * 83)
+      const commonsOpened = Array.from({ length: 9 }, () =>
+        Math.floor(Math.random() * 47)
       ).map((index) => commons[index]);
-      const uncommonsOpened = Array.from({ length: 3 }, () =>
-        Math.floor(Math.random() * 94)
-      ).map((index) => uncommons[index]);
-      const rareOpened = Array.from({ length: 1 }, () =>
-        Math.floor(Math.random() * 113)
+
+      const rareOpened = Array.from({ length: 3 }, () =>
+        Math.floor(Math.random() * 6)
       ).map((index) => rares[index]);
 
+      const ultraRaresOpened = Array.from({ length: 1 }, () =>
+        Math.floor(Math.random() * 3)
+      ).map((index) => ultraRares[index]);
+
+      const legendariesOpened = Array.from({ length: 1 }, () =>
+        Math.floor(Math.random() * 3)
+      ).map((index) => legendaries[index]);
+
       const packContents = []
+        .concat(legendariesOpened)
+        .concat(ultraRaresOpened)
         .concat(rareOpened)
-        .concat(uncommonsOpened)
         .concat(commonsOpened);
 
       setContents(packContents);
