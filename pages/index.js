@@ -56,20 +56,23 @@ function Home() {
             <Link href="/cards">
               <Button href="/cards">Card Images</Button>
             </Link>
+            <Link href="/cards">
+              <Button>Card List</Button>
+            </Link>
             <Link href="/random-pack">
-              <Button>Open Booster Pack</Button>
-            </Link>
-            <Link href="/starter-deck">
-              <Button disabled>Open Starter Deck</Button>
+              <Button>Open a Booster Pack</Button>
             </Link>
             <Link href="/cards">
-              <Button disabled>Card List</Button>
+              <Button>About Series 1</Button>
             </Link>
             <Link href="/cards">
-              <Button disabled>About Alpha</Button>
+              <Button>About Series 2</Button>
             </Link>
             <Link href="/cards">
-              <Button disabled>Alpha Print Runs</Button>
+              <Button>Secondary Market</Button>
+            </Link>
+            <Link href="https://btc-tc.com/" target="_blank">
+              <Button>Buy Bitcoin Trading Cards</Button>
             </Link>
           </LinksWrapper>
         </HomeContainer>
