@@ -13,6 +13,10 @@ const HeaderStyles = styled.div`
   width: 100%;
   padding: 0 24px;
 
+  @media (max-width: 720px) {
+    font-size: 18px;
+  }
+
   .home-link {
     color: #000;
     text-decoration: none;
@@ -43,7 +47,7 @@ const Layout = ({ children }) => {
           Orange Pill in a Pack
         </Link>
         <Link href="/random-pack" className="site-link" onClick={handleClick()}>
-          Open Booster Pack
+          Open a Pack
         </Link>
       </HeaderStyles>
       <main>{children}</main>
