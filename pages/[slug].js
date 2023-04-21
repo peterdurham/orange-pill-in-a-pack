@@ -34,10 +34,10 @@ export default function Page({ card }) {
           style={{
             margin: "0 auto",
             background: "black",
-            padding: "10px",
-            borderRadius: "10px",
-            height: "305px",
-            width: "220px",
+            // padding: "10px",
+            // borderRadius: "10px",
+            height: "285px",
+            width: "200px",
           }}
         >
           <Image src={card.image} height={285} width={200} alt={card.name} />
@@ -46,23 +46,15 @@ export default function Page({ card }) {
           <h2>{card.name}</h2>
           <p style={{ fontWeight: "700" }}>Card Details</p>
           <p>
-            <span className="bold">Casting Cost:</span> 3UU
+            {card.type && (
+              <>
+                <span className="bold">Type: </span>
+                {card.type}
+              </>
+            )}
           </p>
           <p>
             <span className="bold">Rarity:</span> ({card.rarity})
-          </p>
-          <p>
-            <span className="bold">Card Type:</span> Creature{" "}
-            <span className="italic">Elemental</span>
-          </p>
-          <p>
-            <span className="bold">Abilities:</span> Flying
-          </p>
-          <p>
-            <span className="bold">Size:</span> 4/4
-          </p>
-          <p>
-            <span className="bold">Artist:</span> Richard Thomas
           </p>
           <p>
             <span className="bold">Flavor Text:</span>{" "}

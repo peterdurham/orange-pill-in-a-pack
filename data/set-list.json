@@ -2,217 +2,217 @@
   {
     "number": "01",
     "name": "Pacific Bitcoin Van",
-    "type": "Creature",
+    "type": "Pacific Bitcoin Promo",
     "rarity": "R",
     "image": "/images/cards/PacificBitcoinVan.jpeg"
   },
   {
     "number": "02",
     "name": "Pacific Bitcoin Surfboard",
-    "type": "Instant",
+    "type": "Pacific Bitcoin Promo",
     "rarity": "R",
     "image": "/images/cards/PacificBitcoinSurfboard.jpeg"
   },
   {
     "number": "03",
     "name": "Adam Meister",
-    "type": "Enchantment",
+    "type": "Bitcoin Warrior",
     "rarity": "L",
     "image": "/images/cards/AdamMeister.jpeg"
   },
   {
     "number": "04",
     "name": "Tone Vays",
-    "type": "Enchantment",
-    "rarity": "U",
+    "type": "Bitcoin Warrior",
+    "rarity": "L",
     "image": "/images/cards/ToneVays_Legendary.jpeg"
   },
   {
     "number": "05",
     "name": "World of Rusty",
-    "type": "Instant",
+    "type": "Bitcoin Artist",
     "rarity": "R",
     "image": "/images/cards/WorldOfRusty_rare.jpeg"
   },
   {
     "number": "06",
     "name": "21 Million",
-    "type": "Artifact",
+    "type": "Bitcoin",
     "rarity": "C",
     "image": "/images/cards/21MillionBitcoin.jpeg"
   },
   {
     "number": "07",
     "name": "The White Paper",
-    "type": "Sorcery",
+    "type": "Bitcoin",
     "rarity": "C",
     "image": "/images/cards/Whitepaper_common.jpeg"
   },
   {
     "number": "08",
     "name": "The Halving",
-    "type": "Enchant Creature",
+    "type": "Bitcoin",
     "rarity": "C",
     "image": "/images/cards/TheHalving-Common.jpeg"
   },
   {
     "number": "09",
     "name": "Satoshi Nakamoto",
-    "type": "Enchantment",
+    "type": "Bitcoin",
     "rarity": "C",
     "image": "/images/cards/SatoshiNakamoto_common.jpeg"
   },
   {
     "number": "10",
-    "name": "Bitcoin",
-    "type": "Sorcery",
+    "name": "Lightning Network",
+    "type": "Bitcoin",
     "rarity": "C",
-    "image": "/images/cards/BitcoinMining_common.jpeg"
+    "image": "/images/cards/LightningNetwork_common.jpeg"
   },
   {
     "number": "11",
     "name": "Bitcoin (Rocket)",
-    "type": "Land",
+    "type": "Bitcoin",
     "rarity": "C",
     "image": "/images/cards/BitcoinRocket.jpeg"
   },
   {
     "number": "12",
-    "name": "Basalt Mining",
-    "type": "Artifact",
+    "name": "Bitcoin Mining",
+    "type": "Bitcoin",
     "rarity": "C",
     "image": "/images/cards/BitcoinMining_common.jpeg"
   },
   {
     "number": "13",
     "name": "Blockchain",
-    "type": "Land",
+    "type": "Blockchain",
     "rarity": "C",
     "image": "/images/cards/Blockchain_common.jpeg"
   },
   {
     "number": "14",
     "name": "Max Keiser",
-    "type": "Creature",
+    "type": "",
     "rarity": "L",
     "image": "/images/cards/MaxKeiser_Legendary.jpeg"
   },
   {
     "number": "15",
     "name": "Hal Finney",
-    "type": "Instant",
+    "type": "",
     "rarity": "L",
     "image": "/images/cards/HalFinney.jpeg"
   },
   {
     "number": "17",
     "name": "Cypherpunks",
-    "type": "Creature",
+    "type": "",
     "rarity": "L",
     "image": "/images/cards/Cypherpunks_ultrarare.jpeg"
   },
   {
     "number": "18",
     "name": "The White Paper",
-    "type": "Creature",
+    "type": "",
     "rarity": "UR",
     "image": "/images/cards/TheWhitePaper_ultrarare.jpeg"
   },
   {
     "number": "19",
     "name": "Blockchain",
-    "type": "Artifact",
+    "type": "",
     "rarity": "UR",
     "image": "/images/cards/Blockchain_ultrarare.jpeg"
   },
   {
     "number": "20",
     "name": "Education",
-    "type": "Artifact",
+    "type": "",
     "rarity": "UR",
     "image": "/images/cards/Education_ultrarare.jpeg"
   },
   {
     "number": "21",
     "name": "Unalienable Rights",
-    "type": "Enchantment",
+    "type": "",
     "rarity": "R",
     "image": "/images/cards/UnalienableRights.jpeg"
   },
   {
     "number": "22",
     "name": "Economics Limited Edition",
-    "type": "Instant",
+    "type": "",
     "rarity": "R",
     "image": "/images/cards/EconomicsLimitedEdition.jpeg"
   },
   {
     "number": "23",
     "name": "One Hundred Trillion Dollars",
-    "type": "Enchantment",
+    "type": "",
     "rarity": "R",
     "image": "/images/cards/OneHundredTrillionZimbabweDollars.jpeg"
   },
   {
     "number": "24",
     "name": "Satoshi Limited Edition",
-    "type": "Interrupt",
+    "type": "",
     "rarity": "C",
     "image": "/images/cards/SatoshiLimitedEdition_rare.jpeg"
   },
   {
     "number": "25",
     "name": "Bitcoin Maximilist",
-    "type": "Enchantment",
+    "type": "",
     "rarity": "U",
     "image": "/images/cards/BitcoinMaximalist_rare.jpeg"
   },
   {
     "number": "26",
     "name": "Gold",
-    "type": "Creature",
+    "type": "Economics",
     "rarity": "C",
     "image": "/images/cards/Gold.jpeg"
   },
   {
     "number": "27",
     "name": "Economics",
-    "type": "Sorcery",
+    "type": "Economics",
     "rarity": "C",
     "image": "/images/cards/Economics.jpeg"
   },
   {
     "number": "28",
     "name": "Bull Markets",
-    "type": "Enchantment",
+    "type": "Economics",
     "rarity": "C",
     "image": "/images/cards/BullMarkets.jpeg"
   },
   {
     "number": "29",
     "name": "Bear Markets",
-    "type": "Instant",
+    "type": "Economics",
     "rarity": "C",
     "image": "/images/cards/BullMarkets.jpeg"
   },
   {
     "number": "30",
     "name": "Asset Vs Liability",
-    "type": "Enchantment",
+    "type": "Economics",
     "rarity": "C",
     "image": "/images/cards/AssetVsLiability.jpeg"
   },
   {
     "number": "31",
     "name": "Influencers",
-    "type": "Artifact",
+    "type": "Influencers",
     "rarity": "C",
     "image": "/images/cards/Influencers.jpeg"
   },
   {
     "number": "32",
     "name": "Ludwig Von Mises",
-    "type": "Sorcery",
+    "type": "Influencers",
     "rarity": "C",
     "image": "/images/cards/LudwigVonMises.jpeg"
   },
@@ -220,7 +220,7 @@
   {
     "number": "33",
     "name": "FriedrichVonHayek",
-    "type": "Artifact",
+    "type": "Influencers",
     "rarity": "C",
     "image": "/images/cards/FriedrichVonHayek.jpeg"
   },
@@ -269,112 +269,112 @@
   {
     "number": "40",
     "name": "Government",
-    "type": "Creature",
+    "type": "Government",
     "rarity": "C",
     "image": "/images/cards/Government.jpeg"
   },
   {
     "number": "41",
     "name": "Dictatorship",
-    "type": "Creature",
+    "type": "Government",
     "rarity": "C",
-    "image": "/images/cards/Dictatorship.jpeg"
+    "image": "/images/cards/Dictatorship_common.jpeg"
   },
   {
     "number": "42",
     "name": "Federal Reserve",
-    "type": "Enchantment",
+    "type": "Government",
     "rarity": "C",
     "image": "/images/cards/FederalReserve.jpeg"
   },
   {
     "number": "43",
     "name": "Taxation is Theft",
-    "type": "Artifact",
+    "type": "Government",
     "rarity": "C",
-    "image": "/images/cards/TaxationTheft_common.jpeg"
+    "image": "/images/cards/TaxationIsTheft_common.jpeg"
   },
   {
     "number": "44",
     "name": "Freedom",
-    "type": "Sorcery",
+    "type": "Freedom",
     "rarity": "C",
     "image": "/images/cards/Freedom_common.jpeg"
   },
   {
     "number": "45",
     "name": "Decentralized",
-    "type": "Enchantment",
+    "type": "Freedom",
     "rarity": "C",
     "image": "/images/cards/Decentralized_common.jpeg"
   },
   {
     "number": "46",
     "name": "Bill of Rights",
-    "type": "Enchantment",
+    "type": "Freedom",
     "rarity": "C",
     "image": "/images/cards/BillOfRights.jpeg"
   },
   {
     "number": "47",
     "name": "Education",
-    "type": "Artifact",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/Education_common.jpeg"
   },
   {
     "number": "48",
     "name": "Centraliztion",
-    "type": "Enchantment",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/Centralized.jpeg"
   },
   {
     "number": "49",
     "name": "Dollar Cost Average",
-    "type": "Instant",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/DollarCostAverage.jpeg"
   },
   {
     "number": "50",
     "name": "Why Bitcoin",
-    "type": "Creature",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/WhyBitcoin.jpeg"
   },
   {
     "number": "51",
     "name": "FOMO",
-    "type": "Enchantment",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/FearOfMissingOut.jpeg"
   },
   {
     "number": "52",
     "name": "Fear, Uncertainty, & Doubt",
-    "type": "Artifact",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/FearUncertaintyAndDoubt.jpeg"
   },
   {
     "number": "53",
     "name": "The Bitcoin Standard",
-    "type": "Enchantment",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/TheBitcoinStandard.jpeg"
   },
   {
     "number": "54",
     "name": "The Creature From Jekyll Island",
-    "type": "Artifact",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/TheCreatureFromJekyllIsland.jpeg"
   },
   {
     "number": "55",
     "name": "The Marshmallow Experiment",
-    "type": "Enchantment",
+    "type": "Education",
     "rarity": "C",
     "image": "/images/cards/TheMarshmallowExperiment.jpeg"
   },
@@ -382,63 +382,63 @@
   {
     "number": "56",
     "name": "Resources",
-    "type": "Instant",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/Resources.jpeg"
   },
   {
     "number": "57",
     "name": "Hardware Wallet",
-    "type": "Sorcery",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/HardwareWallet.jpeg"
   },
   {
     "number": "58",
     "name": "Bitcoin Exchange",
-    "type": "Enchantment",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/BitcoinExchange.jpeg"
   },
   {
     "number": "59",
     "name": "Fold",
-    "type": "Artifact",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/Fold.jpeg"
   },
   {
     "number": "60",
     "name": "BTC Times",
-    "type": "Instant",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/BitcoinRocket.jpeg"
   },
   {
     "number": "61",
     "name": "Geyser",
-    "type": "Sorcery",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/Geyser.jpeg"
   },
   {
     "number": "63",
     "name": "Coinbeast",
-    "type": "Creature",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/CoinBeast.jpeg"
   },
   {
     "number": "64",
     "name": "Coinbits",
-    "type": "Sorcery",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/Coinbits.jpeg"
   },
   {
     "number": "65",
     "name": "Swan",
-    "type": "Artifact",
+    "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/Swan.jpeg"
   }

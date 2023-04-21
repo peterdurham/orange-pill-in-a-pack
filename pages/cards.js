@@ -23,7 +23,7 @@ const Cards = () => {
       <CardsWrapper>
         <div className="card-container">
           {setList.map((card, index) => (
-            <Link href={`/${card.number}`} key={index}>
+            <Link href={`/${card.number}`} key={card.number}>
               <div
                 style={{
                   marginRight: "8px",
