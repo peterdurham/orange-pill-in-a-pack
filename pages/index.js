@@ -8,7 +8,7 @@ import Button from "@/components/button";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
-  width: 400px;
+  width: 320px;
   margin: 40px auto;
 
   & .image-row {
@@ -72,7 +72,7 @@ function Home() {
               <Button>Secondary Market</Button>
             </Link>
             <Link href="https://btc-tc.com/" target="_blank">
-              <Button>Buy Bitcoin Trading Cards</Button>
+              <Button>Official Website</Button>
             </Link>
           </LinksWrapper>
         </HomeContainer>

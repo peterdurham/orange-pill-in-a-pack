@@ -9,7 +9,7 @@ const ButtonWrapper = styled.button`
   font-size: 16px;
   font-weight: 600;
   background: #fff;
-  border-radius: 32px;
+  border-radius: 8px;
   width: 100%;
 
   &:hover {
