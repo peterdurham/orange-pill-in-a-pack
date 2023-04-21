@@ -29,9 +29,9 @@ const Cards = () => {
                   marginRight: "8px",
                   marginBottom: "8px",
                   background: "black",
-                  padding: "10px",
-                  borderRadius: "14px",
-                  height: "305px",
+                  // padding: "10px",
+                  // borderRadius: "14px",
+                  height: "285px",
                 }}
               >
                 <Image

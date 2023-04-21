@@ -22,17 +22,19 @@
 
 .deck > div {
   background-color: black;
-  background-size: auto 92.5%;
+  /* background-size: auto 92.5%; */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 220px;
-  height: 305px;
+  width: 200px;
+
+  height: 285px;
   /* width: 45vh;
     max-width: 150px;
     height: 63vh;
     max-height: 285px; */
   will-change: transform;
-  border-radius: 14px;
+  /* border-radius: 14px; */
   box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
     0 10px 10px -10px rgba(50, 50, 73, 0.3);
   border-bottom: 1px solid grey;
