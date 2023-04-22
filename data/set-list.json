@@ -102,7 +102,7 @@
   {
     "number": "14",
     "name": "Max Keiser",
-    "type": "",
+    "type": "Legendary",
     "text": "The legendary Max Keiser, a bitcoin pioneer, is one of the world's most outspoken bitcoin supporters. He co-hosts The Orange Pill Podcast with his wife, Stacy Herbert. He has worked in brokeage, banking, and financial technology. He also created The Hollywood Stock Exchange and created virtual currencies and securities. Max's Mission is to spread knowledge about bitcoin to as many people as possible so that the world may benefit from the greatest technology ever invented. - \"Bitcoin's success will guarantee Bitcoin's success\" - Max Keiser",
     "rarity": "L",
     "image": "/images/cards/MaxKeiser_Legendary.jpeg"
@@ -110,71 +110,71 @@
   {
     "number": "15",
     "name": "Hal Finney",
-    "type": "",
+    "type": "Legendary",
     "rarity": "L",
     "image": "/images/cards/HalFinney.jpeg"
   },
   {
     "number": "17",
     "name": "Cypherpunks",
-    "type": "",
+    "type": "Legendary",
     "rarity": "L",
     "image": "/images/cards/Cypherpunks_ultrarare.jpeg"
   },
   {
     "number": "18",
     "name": "The White Paper",
-    "type": "",
+    "type": "Ultrarare",
     "rarity": "UR",
     "image": "/images/cards/TheWhitePaper_ultrarare.jpeg"
   },
   {
     "number": "19",
     "name": "Blockchain",
-    "type": "",
+    "type": "Ultrarare",
     "rarity": "UR",
     "image": "/images/cards/Blockchain_ultrarare.jpeg"
   },
   {
     "number": "20",
     "name": "Education",
-    "type": "",
+    "type": "Ultrarare",
     "rarity": "UR",
     "image": "/images/cards/Education_ultrarare.jpeg"
   },
   {
     "number": "21",
     "name": "Unalienable Rights",
-    "type": "",
+    "type": "Rare",
     "rarity": "R",
     "image": "/images/cards/UnalienableRights.jpeg"
   },
   {
     "number": "22",
     "name": "Economics Limited Edition",
-    "type": "",
+    "type": "Rare",
     "rarity": "R",
     "image": "/images/cards/EconomicsLimitedEdition.jpeg"
   },
   {
     "number": "23",
     "name": "One Hundred Trillion Dollars",
-    "type": "",
+    "type": "Rare",
     "rarity": "R",
     "image": "/images/cards/OneHundredTrillionZimbabweDollars.jpeg"
   },
   {
     "number": "24",
     "name": "Satoshi Limited Edition",
-    "type": "",
-    "rarity": "C",
+    "type": "Rare",
+    "rarity": "R",
     "image": "/images/cards/SatoshiLimitedEdition_rare.jpeg"
   },
   {
     "number": "25",
     "name": "Bitcoin Maximilist",
-    "type": "",
-    "rarity": "U",
+    "type": "Rare",
+    "rarity": "R",
     "image": "/images/cards/BitcoinMaximalist_rare.jpeg"
   },
   {
@@ -203,7 +203,7 @@
     "name": "Bear Markets",
     "type": "Economics",
     "rarity": "C",
-    "image": "/images/cards/BullMarkets.jpeg"
+    "image": "/images/cards/BearMarket.jpeg"
   },
   {
     "number": "30",
@@ -229,7 +229,7 @@
 
   {
     "number": "33",
-    "name": "FriedrichVonHayek",
+    "name": "Friedrich Von Hayek",
     "type": "Influencers",
     "rarity": "C",
     "image": "/images/cards/FriedrichVonHayek.jpeg"
@@ -237,42 +237,42 @@
   {
     "number": "34",
     "name": "The Bretton Woods Agreement",
-    "type": "Instant",
+    "type": "History",
     "rarity": "C",
     "image": "/images/cards/TheBrettonWoodsAgreement.jpeg"
   },
   {
     "number": "35",
     "name": "Gold Standard",
-    "type": "Enchantment",
+    "type": "History",
     "rarity": "C",
     "image": "/images/cards/GoldStandard.jpeg"
   },
   {
     "number": "36",
     "name": "Monetary History",
-    "type": "Enchantment",
+    "type": "History",
     "rarity": "C",
     "image": "/images/cards/MonetaryHistory.jpeg"
   },
   {
     "number": "37",
     "name": "Currency",
-    "type": "Enchantment",
+    "type": "Currency",
     "rarity": "C",
-    "image": "/images/cards/Centralized.jpeg"
+    "image": "/images/cards/Currency.webp"
   },
   {
     "number": "38",
     "name": "Inflation",
-    "type": "Enchantment",
+    "type": "Currency",
     "rarity": "C",
-    "image": "/images/cards/Economics.jpeg"
+    "image": "/images/cards/Inflation.webp"
   },
   {
     "number": "39",
     "name": "US Dollar",
-    "type": "Artifact Creature",
+    "type": "Currency",
     "rarity": "C",
     "image": "/images/cards/USDollar.jpeg"
   },
@@ -422,7 +422,7 @@
     "name": "BTC Times",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/BitcoinRocket.jpeg"
+    "image": "/images/cards/BTCTimes.webp"
   },
   {
     "number": "61",

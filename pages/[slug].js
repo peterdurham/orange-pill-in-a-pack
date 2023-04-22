@@ -34,12 +34,12 @@ export default function Page({ card }) {
           style={{
             margin: "0 auto",
             background: "black",
-            height: "570px",
-            width: "400px",
+            height: "427.5px",
+            width: "300px",
             boxShadow: "1px 1px 6px rgb(0 0 0 / 45%)",
           }}
         >
-          <Image src={card.image} height={570} width={400} alt={card.name} />
+          <Image src={card.image} height={427.5} width={300} alt={card.name} />
         </div>
         <div style={{ width: "300px" }}>
           <h2>{card.name}</h2>

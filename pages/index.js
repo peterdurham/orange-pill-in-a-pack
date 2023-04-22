@@ -56,19 +56,19 @@ function Home() {
             <Link href="/cards">
               <Button href="/cards">Card Images</Button>
             </Link>
-            <Link href="/cards">
+            <Link href="/list">
               <Button>Card List</Button>
             </Link>
             <Link href="/random-pack">
               <Button>Open a Booster Pack</Button>
             </Link>
-            <Link href="/cards">
+            <Link href="/series-1">
               <Button>About Series 1</Button>
             </Link>
-            <Link href="/cards">
+            <Link href="/series-2">
               <Button>About Series 2</Button>
             </Link>
-            <Link href="/cards">
+            <Link href="/secondary-market">
               <Button>Secondary Market</Button>
             </Link>
             <Link href="https://btc-tc.com/" target="_blank">

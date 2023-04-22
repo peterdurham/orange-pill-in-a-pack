@@ -7,10 +7,10 @@ import Button from "@/components/button";
 import Link from "next/link";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 
-const commons = setList.filter((card) => card.rarity === "C"); // 83
-const rares = setList.filter((card) => card.rarity === "R"); // 113
-const ultraRares = setList.filter((card) => card.rarity === "UR"); // 94
-const legendaries = setList.filter((card) => card.rarity === "L"); // 83
+const commons = setList.filter((card) => card.rarity === "C"); // 47
+const rares = setList.filter((card) => card.rarity === "R"); // 8
+const ultraRares = setList.filter((card) => card.rarity === "UR"); // 3
+const legendaries = setList.filter((card) => card.rarity === "L"); // 5
 
 const RandomPack = () => {
   const [contents, setContents] = useState([]);

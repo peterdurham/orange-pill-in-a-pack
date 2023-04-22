@@ -15,7 +15,7 @@ const HeadlineWrapper = styled.div`
   & .headline-line {
     width: 100%;
     height: 1px;
-    background-color: rgba(95, 79, 102, 0.35);
+    background-color: rgb(209, 213, 219);
   }
   & .headline-text {
     background: #f4f7f8;
