@@ -5,15 +5,23 @@ import Layout from "@/components/layout";
 import styled from "styled-components";
 
 const CardsWrapper = styled.div`
-  width: 690px;
+  width: 100%;
   margin: 60px auto;
   display: flex;
+  padding: 0 2.5%;
 
   .card-container {
-    width: 690px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    width: 1000px;
+    margin: 20px auto 15px auto;
+  }
+  .card-image {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    background: black;
+    width: 245px;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 45%);
   }
 `;
 
@@ -23,24 +31,12 @@ const Cards = () => {
       <CardsWrapper>
         <div className="card-container">
           {setList.map((card, index) => (
-            <Link href={`/${card.number}`} key={card.number}>
-              <div
-                style={{
-                  marginRight: "8px",
-                  marginBottom: "8px",
-                  background: "black",
-                  // padding: "10px",
-                  // borderRadius: "14px",
-                  height: "285px",
-                }}
-              >
-                <Image
-                  src={card.image}
-                  height={285}
-                  width={200}
-                  alt={card.name}
-                />
-              </div>
+            <Link
+              href={`/${card.number}`}
+              key={card.number}
+              className="card-link"
+            >
+              <img className="card-image" src={card.image} alt={card.name} />
             </Link>
           ))}
         </div>
