@@ -61,7 +61,7 @@ const Cards = () => {
       <CardsWrapper>
         <div className="card-container">
           {setList.map((card) => (
-            <Link href={`/${card.number}`} key={card.number}>
+            <Link href={`/series-1/${card.number}`} key={card.number}>
               <img className="card-image" src={card.image} alt={card.name} />
             </Link>
           ))}

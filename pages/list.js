@@ -11,7 +11,7 @@ const List = () => {
           return (
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <div style={{ width: "100px" }}>{card.number}</div>
-              <Link href={card.number}>
+              <Link href={`/series-1/${card.number}`}>
                 <div style={{ width: "250px" }}>{card.name}</div>
               </Link>
 

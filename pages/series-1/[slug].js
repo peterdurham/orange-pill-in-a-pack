@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import setList from "../data/set-list.json";
+import setList from "../../data/set-list.json";
 import styled from "styled-components";
 import Layout from "@/components/layout";
+import { useRouter } from "next/router";
 
 const CardDetailsWrapper = styled.div`
   width: 800px;
@@ -18,6 +19,7 @@ const CardDetailsWrapper = styled.div`
 `;
 
 export default function Page({ card }) {
+  const router = useRouter();
   console.log("card", card);
 
   if (!card) {
@@ -29,6 +31,9 @@ export default function Page({ card }) {
       <Head>
         <title>{card.name}</title>
       </Head>
+      <button type="button" onClick={() => router.back()}>
+        go back
+      </button>
       <CardDetailsWrapper>
         <div
           style={{

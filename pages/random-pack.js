@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import setList from "../data/set-list.json";
-import Image from "next/image";
 import CardStack from "../components/card-stack";
 import Layout from "@/components/layout";
 import Button from "@/components/button";
