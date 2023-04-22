@@ -20,7 +20,7 @@ const trans = (r, s) =>
     r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
-function Deck({ contents }) {
+function Deck({ contents, isMobile }) {
   const cards = contents.map((item) => item?.image);
   const [clicked, setClicked] = useState(false);
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
@@ -31,7 +31,7 @@ function Deck({ contents }) {
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
   const bind = useDrag(
     ({ args: [index], down, movement: [mx], direction: [xDir], velocity }) => {
-      const trigger = velocity > 0.2; // If you flick hard enough it should trigger the card to fly out
+      const trigger = isMobile ? velocity > 0.2 : velocity >= 0; // If you flick hard enough it should trigger the card to fly out
       const dir = xDir < 0 ? -1 : 1; // Direction should either point left or right
       if (!down && trigger) gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
       api.start((i) => {
@@ -77,7 +77,7 @@ function Deck({ contents }) {
     //     break;
     // }
   }
-  console.log("props", props);
+
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
     <>
@@ -102,10 +102,10 @@ function Deck({ contents }) {
   );
 }
 
-export default function CardStack(stack) {
+export default function CardStack({ contents, isMobile }) {
   return (
     <div className={styles.container}>
-      <Deck contents={stack.contents} />
+      <Deck contents={contents} isMobile={isMobile} />
     </div>
   );
 }

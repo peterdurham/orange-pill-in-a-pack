@@ -5,6 +5,7 @@ import CardStack from "../components/card-stack";
 import Layout from "@/components/layout";
 import Button from "@/components/button";
 import Link from "next/link";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 const commons = setList.filter((card) => card.rarity === "C"); // 83
 const rares = setList.filter((card) => card.rarity === "R"); // 113
@@ -14,6 +15,7 @@ const legendaries = setList.filter((card) => card.rarity === "L"); // 83
 const RandomPack = () => {
   const [contents, setContents] = useState([]);
   const [clicked, setClicked] = useState(false);
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     if (!clicked) {
@@ -65,7 +67,9 @@ const RandomPack = () => {
         />
       </div> */}
 
-      {contents.length && !clicked && <CardStack contents={contents} />}
+      {contents.length && !clicked && (
+        <CardStack contents={contents} isMobile={width <= 600} />
+      )}
 
       <div style={{ margin: "16px auto", width: "150px" }}>
         <Link

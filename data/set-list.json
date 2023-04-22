@@ -2,14 +2,16 @@
   {
     "number": "01",
     "name": "Pacific Bitcoin Van",
-    "type": "Pacific Bitcoin Promo",
+    "type": "Limited Edition Pacific Bitcoin Card",
+    "text": "Commemorative Pacific Bitcoin Card 2022 - A two day experience leading the way to a bright, orange future - Presented By Swan Bitcoin",
     "rarity": "R",
     "image": "/images/cards/PacificBitcoinVan.jpeg"
   },
   {
     "number": "02",
     "name": "Pacific Bitcoin Surfboard",
-    "type": "Pacific Bitcoin Promo",
+    "type": "Limited Edition Pacific Bitcoin Card",
+    "text": "Commemorative Pacific Bitcoin Card 2022 - A two day experience leading the way to a bright, orange future - Presented By Swan Bitcoin",
     "rarity": "R",
     "image": "/images/cards/PacificBitcoinSurfboard.jpeg"
   },
@@ -24,6 +26,7 @@
     "number": "04",
     "name": "Tone Vays",
     "type": "Bitcoin Warrior",
+    "text": "Before discovering Bitcoin, Tone spent 10 years on Wall Street. Since then, he has been educating others about the importance of Bitcoin. Tone has appeared in documentaries including Magic Money and Bitcoin - Beyond the Bubble. He makes his own content for ToneVays.com and puts on two events, Unconfiscatable for Bitcoin Education and The Financial Summit for traders, hedge funds & high net worth investors. Tone, a defender of truth and freedom, a true Bitcoin Warrior.",
     "rarity": "L",
     "image": "/images/cards/ToneVays_Legendary.jpeg"
   },
@@ -38,6 +41,10 @@
     "number": "06",
     "name": "21 Million",
     "type": "Bitcoin",
+    "subtypes": "decentralized, asset",
+    "stats": "Percentage of Total Bitcoin Mined: 90.97% - Total Bitcoins in circulation: 19,103,119 - Total Bitcoins to ever be produced: 21,000,000 - Next estimated halving date: April 2024, Recorded Date: 7-25-2022",
+    "text": "Bitcoin was designed around the principle of a finite supply. That mean's there's a fixed uppper limit on how many Bitcoin can ever come into existence. That finite supply is set at 21 million bitcoin. Bitcoin's limited supply is a huge advantage, because it keeps the cryptocurrency scarce, helping to maintain or increase its value for years to come. Bitcoin is quickly becoming a global currency and store of value, and with a population of 8 billion, owning even a small portion of one bitcoin puts you ahead of the curve and places you in a great advantage pointby holding a portion of the worlds first finite asset.",
+    "quote": "\"Bitcoin is the most efficient system in the history of mankind for channeling energy through time and space\" - Michael J. Saylor",
     "rarity": "C",
     "image": "/images/cards/21MillionBitcoin.jpeg"
   },
@@ -45,6 +52,8 @@
     "number": "07",
     "name": "The White Paper",
     "type": "Bitcoin",
+    "text": "The word bitcoin was defined in a white paper, published on October 31, 2008 by Satoshi Nakamoto. The pseudonymous individual or group responsivle for bitcoins creation. A white paper is a report or guide that informs readers concisely about a complex subject as well as presenting a philosophy and framework for thinking about the issue. The bitcoin white paper introduced the concept of a decentralized cryptocurrency to the market, changing the course of history in an exciting drama we are all a part of. This document is quite possibly one of the most important papers in history.",
+    "quote": "\"Writing a description for this thing for general audiences is blood hard. There's nothing to relate to.\" -Satoshi Nakamoto",
     "rarity": "C",
     "image": "/images/cards/Whitepaper_common.jpeg"
   },
@@ -94,6 +103,7 @@
     "number": "14",
     "name": "Max Keiser",
     "type": "",
+    "text": "The legendary Max Keiser, a bitcoin pioneer, is one of the world's most outspoken bitcoin supporters. He co-hosts The Orange Pill Podcast with his wife, Stacy Herbert. He has worked in brokeage, banking, and financial technology. He also created The Hollywood Stock Exchange and created virtual currencies and securities. Max's Mission is to spread knowledge about bitcoin to as many people as possible so that the world may benefit from the greatest technology ever invented. - \"Bitcoin's success will guarantee Bitcoin's success\" - Max Keiser",
     "rarity": "L",
     "image": "/images/cards/MaxKeiser_Legendary.jpeg"
   },

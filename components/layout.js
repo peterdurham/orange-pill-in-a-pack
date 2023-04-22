@@ -29,7 +29,7 @@ const HeaderStyles = styled.div`
 
 const Layout = ({ children }) => {
   function handleClick(e) {
-    console.log("clicked");
+    // console.log("clicked");
   }
   return (
     <div>

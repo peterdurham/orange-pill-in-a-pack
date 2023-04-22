@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Layout from "@/components/layout";
 
 const CardDetailsWrapper = styled.div`
-  width: 600px;
+  width: 800px;
   margin: 40px auto;
   display: flex;
 
@@ -34,13 +34,12 @@ export default function Page({ card }) {
           style={{
             margin: "0 auto",
             background: "black",
-            // padding: "10px",
-            // borderRadius: "10px",
-            height: "285px",
-            width: "200px",
+            height: "570px",
+            width: "400px",
+            boxShadow: "1px 1px 6px rgb(0 0 0 / 45%)",
           }}
         >
-          <Image src={card.image} height={285} width={200} alt={card.name} />
+          <Image src={card.image} height={570} width={400} alt={card.name} />
         </div>
         <div style={{ width: "300px" }}>
           <h2>{card.name}</h2>
@@ -56,14 +55,24 @@ export default function Page({ card }) {
           <p>
             <span className="bold">Rarity:</span> ({card.rarity})
           </p>
-          <p>
-            <span className="bold">Flavor Text:</span>{" "}
-            <span className="italic">
-              These spirits of the air are winsome and wild, and cannot be truly
-              contained. Only marginally intelligent, they often substitue
-              whimsy for strategy, delighting in mischief and mayhem.
-            </span>
-          </p>
+          {card.stats && (
+            <p>
+              <span className="bold">Stats:</span>{" "}
+              <span className="italic">{card.stats}</span>
+            </p>
+          )}
+          {card.text && (
+            <p>
+              <span className="bold">Text:</span>{" "}
+              <span className="italic">{card.text}</span>
+            </p>
+          )}
+          {card.quote && (
+            <p>
+              <span className="bold">Quote:</span>{" "}
+              <span className="italic">{card.quote}</span>
+            </p>
+          )}
         </div>
       </CardDetailsWrapper>
     </Layout>
