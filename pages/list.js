@@ -9,7 +9,10 @@ const List = () => {
       <div style={{ width: "1000px", margin: "0 auto" }}>
         {setList.map((card) => {
           return (
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div
+              key={card.number}
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
               <div style={{ width: "100px" }}>{card.number}</div>
               <Link href={`/series-1/${card.number}`}>
                 <div style={{ width: "250px" }}>{card.name}</div>
