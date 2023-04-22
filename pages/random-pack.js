@@ -45,6 +45,26 @@ const RandomPack = () => {
 
   return (
     <Layout>
+      {/* <div style={{ textAlign: "center" }}>
+        <img
+          src="/images/packs/unopened_s1_pack.jpg"
+          style={{
+            width: "200px",
+            height: "285px",
+            cursor: "pointer",
+            margin: "16px auto",
+            position: "absolute",
+            // margin: "0 auto",
+          }}
+          onClick={() => {
+            setClicked(true);
+            setTimeout(() => {
+              setClicked(false);
+            }, 200);
+          }}
+        />
+      </div> */}
+
       {contents.length && !clicked && <CardStack contents={contents} />}
 
       <div style={{ margin: "16px auto", width: "150px" }}>
