@@ -46,7 +46,7 @@ const RandomPack = () => {
 
   return (
     <Layout>
-      {/* <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center" }}>
         <img
           src="/images/packs/unopened_s1_pack.jpg"
           style={{
@@ -55,6 +55,8 @@ const RandomPack = () => {
             cursor: "pointer",
             margin: "16px auto",
             position: "absolute",
+            top: "200px",
+            transform: "translate(-50%, -50%)",
             // margin: "0 auto",
           }}
           onClick={() => {
@@ -64,13 +66,13 @@ const RandomPack = () => {
             }, 200);
           }}
         />
-      </div> */}
+      </div>
 
       {contents.length && !clicked && (
         <CardStack contents={contents} isMobile={width <= 600} />
       )}
 
-      <div style={{ margin: "16px auto", width: "150px" }}>
+      {/* <div style={{ margin: "16px auto", width: "150px" }}>
         <Link
           href="/random-pack"
           onClick={() => {
@@ -82,7 +84,7 @@ const RandomPack = () => {
         >
           <Button>New Pack</Button>
         </Link>
-      </div>
+      </div> */}
     </Layout>
   );
 };
