@@ -3,11 +3,11 @@ import Image from "next/image";
 import setList from "../../data/set-list.json";
 import styled from "styled-components";
 import Layout from "@/components/layout";
-import { useRouter } from "next/router";
+import BackButton from "@/components/BackButton";
 
 const CardDetailsWrapper = styled.div`
-  width: 800px;
-  margin: 40px auto;
+  width: 720px;
+  margin: 0 auto 40px auto;
   display: flex;
 
   & h2 {
@@ -16,12 +16,21 @@ const CardDetailsWrapper = styled.div`
   & p {
     margin-bottom: 10px;
   }
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
+`;
+
+const BackButtonContainer = styled.div`
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
 `;
 
 export default function Page({ card }) {
-  const router = useRouter();
-  console.log("card", card);
-
   if (!card) {
     return <div>404</div>;
   }
@@ -31,9 +40,9 @@ export default function Page({ card }) {
       <Head>
         <title>{card.name}</title>
       </Head>
-      <button type="button" onClick={() => router.back()}>
-        go back
-      </button>
+      <BackButtonContainer>
+        <BackButton />
+      </BackButtonContainer>
       <CardDetailsWrapper>
         <div
           style={{
@@ -46,9 +55,23 @@ export default function Page({ card }) {
         >
           <Image src={card.image} height={427.5} width={300} alt={card.name} />
         </div>
-        <div style={{ width: "300px" }}>
-          <h2>{card.name}</h2>
-          <p style={{ fontWeight: "700" }}>Card Details</p>
+        <div style={{ width: "480px", marginLeft: "60px" }}>
+          <h2 style={{ marginBottom: "8px", fontSize: "32px" }}>{card.name}</h2>
+          <p style={{ color: "#767676", marginBottom: "24px" }}>
+            Orange Pill in a Pack Edition
+          </p>
+          <h2
+            style={{
+              fontWeight: "700",
+              marginBottom: "10px",
+              fontSize: "16px",
+            }}
+          >
+            Card Details
+          </h2>
+          <p>
+            <span className="bold">Number:</span> {card.number}/65
+          </p>
           <p>
             {card.type && (
               <>
@@ -57,8 +80,13 @@ export default function Page({ card }) {
               </>
             )}
           </p>
+
           <p>
-            <span className="bold">Rarity:</span> ({card.rarity})
+            <span className="bold">Rarity:</span>{" "}
+            {card.rarity === "L" && "Legendary"}
+            {card.rarity === "UR" && "Ultrarare"}
+            {card.rarity === "R" && "Rare"}
+            {card.rarity === "C" && "Common"}
           </p>
           {card.stats && (
             <p>
