@@ -59,9 +59,8 @@ const List = () => {
         </div>
         {setList.map((card) => {
           return (
-            <Link href={`/series-1/${card.number}`}>
+            <Link href={`/series-1/${card.number}`} key={card.number}>
               <div
-                key={card.number}
                 className="list-item"
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
