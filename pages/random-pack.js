@@ -11,6 +11,24 @@ const rares = setList.filter((card) => card.rarity === "R"); // 8
 const ultraRares = setList.filter((card) => card.rarity === "UR"); // 3
 const legendaries = setList.filter((card) => card.rarity === "L"); // 5
 
+const rarePool = [];
+rares.forEach((rare) => {
+  if (rare.number !== "01" && rare.number !== "02")
+    for (let i = 0; i < 999; i++) {
+      rarePool.push(rare.number);
+    }
+});
+ultraRares.forEach((ultrarare) => {
+  for (let i = 0; i < 500; i++) {
+    rarePool.push(ultrarare.number);
+  }
+});
+legendaries.forEach((legendary) => {
+  for (let i = 0; i < 100; i++) {
+    rarePool.push(legendary.number);
+  }
+});
+
 const RandomPack = () => {
   const [contents, setContents] = useState([]);
   const [clicked, setClicked] = useState(false);
@@ -22,23 +40,11 @@ const RandomPack = () => {
         Math.floor(Math.random() * 47)
       ).map((index) => commons[index]);
 
-      const rareOpened = Array.from({ length: 3 }, () =>
-        Math.floor(Math.random() * 6)
-      ).map((index) => rares[index]);
+      const rareOpened = setList.find(
+        (card) => card.number === rarePool[Math.floor(Math.random() * 7994)]
+      );
 
-      const ultraRaresOpened = Array.from({ length: 1 }, () =>
-        Math.floor(Math.random() * 3)
-      ).map((index) => ultraRares[index]);
-
-      const legendariesOpened = Array.from({ length: 1 }, () =>
-        Math.floor(Math.random() * 3)
-      ).map((index) => legendaries[index]);
-
-      const packContents = []
-        .concat(legendariesOpened)
-        .concat(ultraRaresOpened)
-        .concat(rareOpened)
-        .concat(commonsOpened);
+      const packContents = [].concat(rareOpened).concat(commonsOpened);
 
       setContents(packContents);
     }
