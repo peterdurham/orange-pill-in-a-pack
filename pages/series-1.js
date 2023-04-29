@@ -55,7 +55,7 @@ const SeriesOne = () => {
             <p>
               328 booster boxes - <span className="italic">24 packs each</span>
             </p>
-            <p style={{ marginBottom: "10px" }}>7,894 packs</p>
+            <p style={{ marginBottom: "10px" }}>7,894 packs total</p>
             <p style={{ fontWeight: "700" }}>Packs include:</p>
             <p>1x Rare, Ultra-rare, Legendary, or 1/1</p>
             <p>9x Series 1 Commons</p>
@@ -75,7 +75,7 @@ const SeriesOne = () => {
         <div className="pack-info">
           <div className="pack-text">
             <h2 style={{ marginBottom: "10px" }}>Pacific Bitcoin pack</h2>
-            <p style={{ marginBottom: "10px" }}>1,998 packs</p>
+            <p style={{ marginBottom: "10px" }}>1,998 packs total</p>
             <p style={{ fontWeight: "700", marginTop: "10px" }}>
               Packs include:
             </p>
