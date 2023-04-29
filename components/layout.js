@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="og:site_name" content="Orange Pill in a Pack" />
+        {/* <meta name="og:site_name" content="Orange Pill in a Pack" /> */}
       </Head>
 
       <HeaderStyles>
@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 24 24"
               height="1em"
               width="1em"

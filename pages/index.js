@@ -41,10 +41,12 @@ const LinksWrapper = styled.div`
 `;
 
 function Home() {
+  const siteTitle = "Orange Pill in a Pack - Bitcoin Trading Cards";
+
   return (
     <>
       <Head>
-        <title>Orange Pill in a Pack - Bitcoin Trading Cards</title>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -86,7 +88,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 16 16"
                   height="1em"
                   width="1em"
@@ -103,7 +105,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 24 24"
                   height="1em"
                   width="1em"
@@ -119,7 +121,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 24 24"
                   height="1em"
                   width="1em"
@@ -136,7 +138,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 24 24"
                   height="1em"
                   width="1em"
@@ -152,7 +154,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 512 512"
                   height="1em"
                   width="1em"
@@ -168,7 +170,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 24 24"
                   height="1em"
                   width="1em"
@@ -184,7 +186,7 @@ function Home() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 24 24"
                   height="1em"
                   width="1em"

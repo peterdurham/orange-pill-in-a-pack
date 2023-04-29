@@ -35,12 +35,12 @@ export default function Page({ card }) {
     return <div>404</div>;
   }
 
+  const cardTitle = `${card.name} | Orange Pill in a Pack | Bitcoin Trading Cards`;
+
   return (
     <Layout>
       <Head>
-        <title>
-          {card.name} | Orange Pill in a Pack | Bitcoin Trading Cards
-        </title>
+        <title>{cardTitle}</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
