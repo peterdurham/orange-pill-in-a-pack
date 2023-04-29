@@ -19,7 +19,7 @@ const HeadlineWrapper = styled.div`
   }
   & .headline-text {
     background: #f4f7f8;
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
     padding-left: 16px;
     padding-right: 16px;

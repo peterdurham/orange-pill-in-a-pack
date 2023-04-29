@@ -39,7 +39,9 @@ const List = () => {
   return (
     <Layout>
       <div style={{ width: "1000px", margin: "20px auto 0 auto" }}>
-        <h1>Card List - Series 1</h1>
+        <h1 style={{ fontSize: "18px", fontWeight: "400" }}>
+          Card List - Series 1
+        </h1>
       </div>
       <ListItemWrapper>
         <div

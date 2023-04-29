@@ -56,7 +56,7 @@ const RandomPack = () => {
         <img
           src="/images/packs/unopened_s1_pack.jpg"
           style={{
-            width: "200px",
+            width: "170px",
             height: "285px",
             cursor: "pointer",
             margin: "16px auto",

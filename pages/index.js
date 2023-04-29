@@ -9,13 +9,14 @@ import styled from "styled-components";
 
 const HomeContainer = styled.div`
   width: 320px;
-  margin: 40px auto;
+  margin: 20px auto 40px auto;
 
   & .image-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 `;
 
@@ -24,7 +25,7 @@ const LinksWrapper = styled.div`
   display: grid;
 
   & button {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     margin-right: 10px;
   }
 `;
@@ -41,16 +42,16 @@ function Home() {
       <Layout>
         <HomeContainer>
           <div className="image-row">
-            {/* <Image
+            {/* {/* <Image
               src="/images/logos/mtg-logo-orange.webp"
               height={112}
               width={250}
-            />
-            <Image
-              src="/images/logos/alpha-a-logo.png"
-              height={75}
-              width={75}
             /> */}
+            <Image
+              src="/images/logos/BTC_MAIN_LOGO.png"
+              height={105}
+              width={150}
+            />
           </div>
           <LinksWrapper>
             <Link href="/cards">
