@@ -5,7 +5,7 @@ import Layout from "@/components/layout";
 import styled from "styled-components";
 
 const HeadlineWrapper = styled.div`
-  width: 900px;
+  width: 800px;
   height: 36px;
   margin: 40px auto 10px auto;
   display: flex;
@@ -27,7 +27,7 @@ const HeadlineWrapper = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     width: calc(100% - 48px);
     margin-left: 24px;
     margin-right: 24px;
@@ -39,9 +39,9 @@ const CardsWrapper = styled.div`
   margin-right: 24px;
   & .card-container {
     display: grid;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 16px;
   }
   .card-image {
@@ -61,7 +61,7 @@ const Cards = () => {
       <CardsWrapper>
         <div className="card-container">
           {setList.map((card) => (
-            <Link href={`/series-1/${card.number}`} key={card.number}>
+            <Link href={`/series-1/${card.slug}`} key={card.number}>
               <img className="card-image" src={card.image} alt={card.name} />
             </Link>
           ))}

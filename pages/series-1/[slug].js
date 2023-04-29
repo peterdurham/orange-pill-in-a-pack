@@ -114,13 +114,13 @@ export default function Page({ card }) {
 
 export async function getStaticPaths() {
   const paths = setList.map((card) => {
-    return { params: { slug: card.number } };
+    return { params: { slug: card.slug } };
   });
   return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
-  const card = setList.find((card) => card.number === params.slug);
+  const card = setList.find((card) => card.slug === params.slug);
   if (!card) {
     return {
       notFound: true,
