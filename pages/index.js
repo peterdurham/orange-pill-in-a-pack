@@ -24,10 +24,10 @@ const LinksWrapper = styled.div`
   display: grid;
   & a {
     text-decoration: none;
+    margin-bottom: 12px;
   }
 
   & button {
-    margin-bottom: 12px;
     margin-right: 10px;
     display: flex;
     justify-content: flex-start;
