@@ -130,6 +130,14 @@
     "image": "/images/cards/series-1/hal-finney.jpeg"
   },
   {
+    "number": "16",
+    "slug": "greg-foss",
+    "name": "Greg Foss",
+    "type": "Lost Card",
+    "rarity": "X",
+    "image": "/images/cards/series-1/greg-foss.jpg"
+  },
+  {
     "number": "17",
     "slug": "cypherpunks",
     "name": "Cypherpunks",
@@ -490,6 +498,14 @@
     "type": "Resources",
     "rarity": "C",
     "image": "/images/cards/series-1/geyser.jpeg"
+  },
+  {
+    "number": "62",
+    "slug": "series-1-lost-card",
+    "name": "Series 1 Lost Card",
+    "type": "Lost Card",
+    "rarity": "X",
+    "image": "/images/cards/series-1/series-1-lost-card.jpeg"
   },
   {
     "number": "63",
