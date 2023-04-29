@@ -39,6 +39,11 @@ const CardNavigationContainer = styled.div`
     font-size: 13px;
     font-weight: 600;
     transition: 0.2s all;
+    max-width: 50%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
   }
   a:hover {
     color: #000;
@@ -126,14 +131,14 @@ export default function Page({ card }) {
                 >
                   <path d="M216.4 163.7c5.1 5 5.1 13.3.1 18.4L155.8 243h231.3c7.1 0 12.9 5.8 12.9 13s-5.8 13-12.9 13H155.8l60.8 60.9c5 5.1 4.9 13.3-.1 18.4-5.1 5-13.2 5-18.3-.1l-82.4-83c-1.1-1.2-2-2.5-2.7-4.1-.7-1.6-1-3.3-1-5 0-3.4 1.3-6.6 3.7-9.1l82.4-83c4.9-5.2 13.1-5.3 18.2-.3z"></path>
                 </svg>
-                Previous
+                {prevCard.name}
               </Link>
             ) : (
               <div></div>
             )}
             {nextCard ? (
               <Link href={`/series-1/${nextCard.slug}`}>
-                Next
+                {nextCard.name}
                 <svg
                   stroke="currentColor"
                   fill="currentColor"

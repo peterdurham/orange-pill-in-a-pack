@@ -14,6 +14,10 @@ const HeaderStyles = styled.div`
   height: 60px;
   width: 100%;
   padding: 0 24px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
   @media (max-width: 720px) {
     font-size: 18px;
