@@ -38,7 +38,31 @@ export default function Page({ card }) {
   return (
     <Layout>
       <Head>
-        <title>{card.name}</title>
+        <title>
+          {card.name} | Orange Pill in a Pack | Bitcoin Trading Cards
+        </title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Search site for Orange Pill in a Pack Bitcoin Trading Cards images, set lists, print run stats, booster pack simulator, and card listings for sale or trade."
+        />
+        <meta
+          name="keywords"
+          content="Bitcoin Trading Cards, Orange Pill in a Pack, FUD Busters, btc-tc, card lists, card images, set lists, booster packs, btc-tc listings, btc-tc marketplace, Pacific Bitcoin, scarce city auctions"
+        />
+        <meta
+          name="og:title"
+          content={`${card.name} - Orange Pill in a Pack`}
+        />
+        <meta
+          name="og:description"
+          content="Search site for Orange Pill in a Pack Bitcoin Trading Cards images, set lists, print run stats, booster pack simulator, and card listings for sale or trade."
+        />
+        <meta name="og:url" content="https://orangepillinapack.com/" />
+        <meta name="og:locale" content="en_US" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <BackButtonContainer>
         <BackButton />

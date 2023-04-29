@@ -64,12 +64,7 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta name="og:title" content="MTG Alpha" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="og:site_name" content="Orange Pill in a Pack" />
       </Head>
 
       <HeaderStyles>
