@@ -1,49 +1,49 @@
 [
   {
-    "number": "01",
+    "number": "1",
     "slug": "pacific-bitcoin-van",
     "name": "Pacific Bitcoin Van",
     "type": "Pacific Bitcoin 2022 Card",
     "text": "Commemorative Pacific Bitcoin Card 2022 - A two day experience leading the way to a bright, orange future - Presented By Swan Bitcoin",
     "rarity": "R",
-    "image": "/images/cards/PacificBitcoinVan.jpeg"
+    "image": "/images/cards/series-1/pacific-bitcoin-van.jpeg"
   },
   {
-    "number": "02",
+    "number": "2",
     "slug": "pacific-bitcoin-surfboard",
     "name": "Pacific Bitcoin Surfboard",
     "type": "Pacific Bitcoin 2022 Card",
     "text": "Commemorative Pacific Bitcoin Card 2022 - A two day experience leading the way to a bright, orange future - Presented By Swan Bitcoin",
     "rarity": "R",
-    "image": "/images/cards/PacificBitcoinSurfboard.jpeg"
+    "image": "/images/cards/series-1/pacific-bitcoin-surfboard.jpeg"
   },
   {
-    "number": "03",
+    "number": "3",
     "slug": "adam-meister",
     "name": "Adam Meister",
     "type": "Bitcoin Warrior",
     "rarity": "L",
-    "image": "/images/cards/AdamMeister.jpeg"
+    "image": "/images/cards/series-1/adam-meister.jpeg"
   },
   {
-    "number": "04",
+    "number": "4",
     "slug": "tone-vays",
     "name": "Tone Vays",
     "type": "Bitcoin Warrior",
     "text": "Before discovering Bitcoin, Tone spent 10 years on Wall Street. Since then, he has been educating others about the importance of Bitcoin. Tone has appeared in documentaries including Magic Money and Bitcoin - Beyond the Bubble. He makes his own content for ToneVays.com and puts on two events, Unconfiscatable for Bitcoin Education and The Financial Summit for traders, hedge funds & high net worth investors. Tone, a defender of truth and freedom, a true Bitcoin Warrior.",
     "rarity": "L",
-    "image": "/images/cards/ToneVays_Legendary.jpeg"
+    "image": "/images/cards/series-1/tone-vays.jpeg"
   },
   {
-    "number": "05",
+    "number": "5",
     "slug": "world-of-rusty",
     "name": "World of Rusty",
     "type": "Bitcoin Artist",
     "rarity": "R",
-    "image": "/images/cards/WorldOfRusty_rare.jpeg"
+    "image": "/images/cards/series-1/world-of-rusty.jpeg"
   },
   {
-    "number": "06",
+    "number": "6",
     "slug": "21-million",
     "name": "21 Million",
     "type": "Bitcoin",
@@ -52,33 +52,33 @@
     "text": "Bitcoin was designed around the principle of a finite supply. That mean's there's a fixed uppper limit on how many Bitcoin can ever come into existence. That finite supply is set at 21 million bitcoin. Bitcoin's limited supply is a huge advantage, because it keeps the cryptocurrency scarce, helping to maintain or increase its value for years to come. Bitcoin is quickly becoming a global currency and store of value, and with a population of 8 billion, owning even a small portion of one bitcoin puts you ahead of the curve and places you in a great advantage pointby holding a portion of the worlds first finite asset.",
     "quote": "\"Bitcoin is the most efficient system in the history of mankind for channeling energy through time and space\" - Michael J. Saylor",
     "rarity": "C",
-    "image": "/images/cards/21MillionBitcoin.jpeg"
+    "image": "/images/cards/series-1/21-million.jpeg"
   },
   {
-    "number": "07",
+    "number": "7",
     "slug": "the-white-paper-common",
     "name": "The White Paper",
     "type": "Bitcoin",
     "text": "The word bitcoin was defined in a white paper, published on October 31, 2008 by Satoshi Nakamoto. The pseudonymous individual or group responsivle for bitcoins creation. A white paper is a report or guide that informs readers concisely about a complex subject as well as presenting a philosophy and framework for thinking about the issue. The bitcoin white paper introduced the concept of a decentralized cryptocurrency to the market, changing the course of history in an exciting drama we are all a part of. This document is quite possibly one of the most important papers in history.",
     "quote": "\"Writing a description for this thing for general audiences is blood hard. There's nothing to relate to.\" -Satoshi Nakamoto",
     "rarity": "C",
-    "image": "/images/cards/Whitepaper_common.jpeg"
+    "image": "/images/cards/series-1/the-white-paper-common.jpeg"
   },
   {
-    "number": "08",
+    "number": "8",
     "slug": "the-halving",
     "name": "The Halving",
     "type": "Bitcoin",
     "rarity": "C",
-    "image": "/images/cards/TheHalving-Common.jpeg"
+    "image": "/images/cards/series-1/the-halving.jpeg"
   },
   {
-    "number": "09",
+    "number": "9",
     "slug": "satoshi-nakamoto",
     "name": "Satoshi Nakamoto",
     "type": "Bitcoin",
     "rarity": "C",
-    "image": "/images/cards/SatoshiNakamoto_common.jpeg"
+    "image": "/images/cards/series-1/satoshi-nakamoto.jpeg"
   },
   {
     "number": "10",
@@ -86,7 +86,7 @@
     "name": "Lightning Network",
     "type": "Bitcoin",
     "rarity": "C",
-    "image": "/images/cards/LightningNetwork_common.jpeg"
+    "image": "/images/cards/series-1/lightning-network.jpeg"
   },
   {
     "number": "11",
@@ -94,7 +94,7 @@
     "name": "Bitcoin (Rocket)",
     "type": "Bitcoin",
     "rarity": "C",
-    "image": "/images/cards/BitcoinRocket.jpeg"
+    "image": "/images/cards/series-1/bitcoin.jpeg"
   },
   {
     "number": "12",
@@ -102,7 +102,7 @@
     "name": "Bitcoin Mining",
     "type": "Bitcoin",
     "rarity": "C",
-    "image": "/images/cards/BitcoinMining_common.jpeg"
+    "image": "/images/cards/series-1/bitcoin-mining.jpeg"
   },
   {
     "number": "13",
@@ -110,7 +110,7 @@
     "name": "Blockchain",
     "type": "Blockchain",
     "rarity": "C",
-    "image": "/images/cards/Blockchain_common.jpeg"
+    "image": "/images/cards/series-1/blockchain-common.jpeg"
   },
   {
     "number": "14",
@@ -119,7 +119,7 @@
     "type": "Legendary",
     "text": "The legendary Max Keiser, a bitcoin pioneer, is one of the world's most outspoken bitcoin supporters. He co-hosts The Orange Pill Podcast with his wife, Stacy Herbert. He has worked in brokeage, banking, and financial technology. He also created The Hollywood Stock Exchange and created virtual currencies and securities. Max's Mission is to spread knowledge about bitcoin to as many people as possible so that the world may benefit from the greatest technology ever invented. - \"Bitcoin's success will guarantee Bitcoin's success\" - Max Keiser",
     "rarity": "L",
-    "image": "/images/cards/MaxKeiser_Legendary.jpeg"
+    "image": "/images/cards/series-1/max-keiser.jpeg"
   },
   {
     "number": "15",
@@ -127,7 +127,7 @@
     "name": "Hal Finney",
     "type": "Legendary",
     "rarity": "L",
-    "image": "/images/cards/HalFinney.jpeg"
+    "image": "/images/cards/series-1/hal-finney.jpeg"
   },
   {
     "number": "17",
@@ -135,7 +135,7 @@
     "name": "Cypherpunks",
     "type": "Legendary",
     "rarity": "L",
-    "image": "/images/cards/Cypherpunks_ultrarare.jpeg"
+    "image": "/images/cards/series-1/cypherpunks.jpeg"
   },
   {
     "number": "18",
@@ -143,7 +143,7 @@
     "name": "The White Paper",
     "type": "Ultrarare",
     "rarity": "UR",
-    "image": "/images/cards/TheWhitePaper_ultrarare.jpeg"
+    "image": "/images/cards/series-1/the-white-paper-ultrarare.jpeg"
   },
   {
     "number": "19",
@@ -151,7 +151,7 @@
     "name": "Blockchain",
     "type": "Ultrarare",
     "rarity": "UR",
-    "image": "/images/cards/Blockchain_ultrarare.jpeg"
+    "image": "/images/cards/series-1/blockchain-ultrarare.jpeg"
   },
   {
     "number": "20",
@@ -159,7 +159,7 @@
     "name": "Education",
     "type": "Ultrarare",
     "rarity": "UR",
-    "image": "/images/cards/Education_ultrarare.jpeg"
+    "image": "/images/cards/series-1/education-ultrarare.jpeg"
   },
   {
     "number": "21",
@@ -167,7 +167,7 @@
     "name": "Unalienable Rights",
     "type": "Rare",
     "rarity": "R",
-    "image": "/images/cards/UnalienableRights.jpeg"
+    "image": "/images/cards/series-1/unalienable-rights.jpeg"
   },
   {
     "number": "22",
@@ -175,7 +175,7 @@
     "name": "Economics Limited Edition",
     "type": "Rare",
     "rarity": "R",
-    "image": "/images/cards/EconomicsLimitedEdition.jpeg"
+    "image": "/images/cards/series-1/economics-limited-edition.jpeg"
   },
   {
     "number": "23",
@@ -183,7 +183,7 @@
     "name": "Zimbabwe Dollar",
     "type": "Rare",
     "rarity": "R",
-    "image": "/images/cards/OneHundredTrillionZimbabweDollars.jpeg"
+    "image": "/images/cards/series-1/zimbabwe-dollar.jpeg"
   },
   {
     "number": "24",
@@ -191,7 +191,7 @@
     "name": "Satoshi Limited Edition",
     "type": "Rare",
     "rarity": "R",
-    "image": "/images/cards/SatoshiLimitedEdition_rare.jpeg"
+    "image": "/images/cards/series-1/satoshi-limited-edition.jpeg"
   },
   {
     "number": "25",
@@ -199,7 +199,7 @@
     "name": "Bitcoin Maximilist",
     "type": "Rare",
     "rarity": "R",
-    "image": "/images/cards/BitcoinMaximalist_rare.jpeg"
+    "image": "/images/cards/series-1/bitcoin-maximalist.jpeg"
   },
   {
     "number": "26",
@@ -207,7 +207,7 @@
     "name": "Gold",
     "type": "Economics",
     "rarity": "C",
-    "image": "/images/cards/Gold.jpeg"
+    "image": "/images/cards/series-1/gold.jpeg"
   },
   {
     "number": "27",
@@ -215,7 +215,7 @@
     "name": "Economics",
     "type": "Economics",
     "rarity": "C",
-    "image": "/images/cards/Economics.jpeg"
+    "image": "/images/cards/series-1/economics.jpeg"
   },
   {
     "number": "28",
@@ -223,15 +223,15 @@
     "name": "Bull Markets",
     "type": "Economics",
     "rarity": "C",
-    "image": "/images/cards/BullMarkets.jpeg"
+    "image": "/images/cards/series-1/bull-markets.jpeg"
   },
   {
     "number": "29",
-    "slug": "bear-markets",
-    "name": "Bear Markets",
+    "slug": "bear-market",
+    "name": "Bear Market",
     "type": "Economics",
     "rarity": "C",
-    "image": "/images/cards/BearMarket.jpeg"
+    "image": "/images/cards/series-1/bear-market.jpeg"
   },
   {
     "number": "30",
@@ -239,7 +239,7 @@
     "name": "Asset Vs Liability",
     "type": "Economics",
     "rarity": "C",
-    "image": "/images/cards/AssetVsLiability.jpeg"
+    "image": "/images/cards/series-1/asset-vs-liability.jpeg"
   },
   {
     "number": "31",
@@ -247,7 +247,7 @@
     "name": "Influencers",
     "type": "Influencers",
     "rarity": "C",
-    "image": "/images/cards/Influencers.jpeg"
+    "image": "/images/cards/series-1/influencers.jpeg"
   },
   {
     "number": "32",
@@ -255,7 +255,7 @@
     "name": "Ludwig Von Mises",
     "type": "Influencers",
     "rarity": "C",
-    "image": "/images/cards/LudwigVonMises.jpeg"
+    "image": "/images/cards/series-1/ludwig-von-mises.jpeg"
   },
 
   {
@@ -264,7 +264,7 @@
     "name": "Friedrich Von Hayek",
     "type": "Influencers",
     "rarity": "C",
-    "image": "/images/cards/FriedrichVonHayek.jpeg"
+    "image": "/images/cards/series-1/friedrich-von-hayek.jpeg"
   },
   {
     "number": "34",
@@ -272,7 +272,7 @@
     "name": "The Bretton Woods Agreement",
     "type": "History",
     "rarity": "C",
-    "image": "/images/cards/TheBrettonWoodsAgreement.jpeg"
+    "image": "/images/cards/series-1/the-bretton-woods-agreement.jpeg"
   },
   {
     "number": "35",
@@ -280,7 +280,7 @@
     "name": "Gold Standard",
     "type": "History",
     "rarity": "C",
-    "image": "/images/cards/GoldStandard.jpeg"
+    "image": "/images/cards/series-1/gold-standard.jpeg"
   },
   {
     "number": "36",
@@ -288,7 +288,7 @@
     "name": "Monetary History",
     "type": "History",
     "rarity": "C",
-    "image": "/images/cards/MonetaryHistory.jpeg"
+    "image": "/images/cards/series-1/monetary-history.jpeg"
   },
   {
     "number": "37",
@@ -296,7 +296,7 @@
     "name": "Currency",
     "type": "Currency",
     "rarity": "C",
-    "image": "/images/cards/Currency.webp"
+    "image": "/images/cards/series-1/currency.webp"
   },
   {
     "number": "38",
@@ -304,7 +304,7 @@
     "name": "Inflation",
     "type": "Currency",
     "rarity": "C",
-    "image": "/images/cards/Inflation.webp"
+    "image": "/images/cards/series-1/inflation.webp"
   },
   {
     "number": "39",
@@ -312,7 +312,7 @@
     "name": "US Dollar",
     "type": "Currency",
     "rarity": "C",
-    "image": "/images/cards/USDollar.jpeg"
+    "image": "/images/cards/series-1/us-dollar.jpeg"
   },
   {
     "number": "40",
@@ -320,7 +320,7 @@
     "name": "Government",
     "type": "Government",
     "rarity": "C",
-    "image": "/images/cards/Government.jpeg"
+    "image": "/images/cards/series-1/government.jpeg"
   },
   {
     "number": "41",
@@ -328,7 +328,7 @@
     "name": "Dictatorship",
     "type": "Government",
     "rarity": "C",
-    "image": "/images/cards/Dictatorship_common.jpeg"
+    "image": "/images/cards/series-1/dictatorship.jpeg"
   },
   {
     "number": "42",
@@ -336,7 +336,7 @@
     "name": "Federal Reserve",
     "type": "Government",
     "rarity": "C",
-    "image": "/images/cards/FederalReserve.jpeg"
+    "image": "/images/cards/series-1/federal-reserve.jpeg"
   },
   {
     "number": "43",
@@ -344,7 +344,7 @@
     "name": "Taxation is Theft",
     "type": "Government",
     "rarity": "C",
-    "image": "/images/cards/TaxationIsTheft_common.jpeg"
+    "image": "/images/cards/series-1/taxation-is-theft.jpeg"
   },
   {
     "number": "44",
@@ -352,7 +352,7 @@
     "name": "Freedom",
     "type": "Freedom",
     "rarity": "C",
-    "image": "/images/cards/Freedom_common.jpeg"
+    "image": "/images/cards/series-1/freedom.jpeg"
   },
   {
     "number": "45",
@@ -360,7 +360,7 @@
     "name": "Decentralized",
     "type": "Freedom",
     "rarity": "C",
-    "image": "/images/cards/Decentralized_common.jpeg"
+    "image": "/images/cards/series-1/decentralized.jpeg"
   },
   {
     "number": "46",
@@ -368,7 +368,7 @@
     "name": "Bill of Rights",
     "type": "Freedom",
     "rarity": "C",
-    "image": "/images/cards/BillOfRights.jpeg"
+    "image": "/images/cards/series-1/bill-of-rights.jpeg"
   },
   {
     "number": "47",
@@ -376,15 +376,15 @@
     "name": "Education",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/Education_common.jpeg"
+    "image": "/images/cards/series-1/education-common.jpeg"
   },
   {
     "number": "48",
-    "slug": "centralization",
-    "name": "Centraliztion",
+    "slug": "centralized",
+    "name": "Centralized",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/Centralized.jpeg"
+    "image": "/images/cards/series-1/centralized.jpeg"
   },
   {
     "number": "49",
@@ -392,7 +392,7 @@
     "name": "Dollar Cost Average",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/DollarCostAverage.jpeg"
+    "image": "/images/cards/series-1/dollar-cost-average.jpeg"
   },
   {
     "number": "50",
@@ -400,7 +400,7 @@
     "name": "Why Bitcoin",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/WhyBitcoin.jpeg"
+    "image": "/images/cards/series-1/why-bitcoin.jpeg"
   },
   {
     "number": "51",
@@ -408,7 +408,7 @@
     "name": "Fear of Missing Out",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/FearOfMissingOut.jpeg"
+    "image": "/images/cards/series-1/fear-of-missing-out.jpeg"
   },
   {
     "number": "52",
@@ -416,7 +416,7 @@
     "name": "Fear, Uncertainty, & Doubt",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/FearUncertaintyAndDoubt.jpeg"
+    "image": "/images/cards/series-1/fear-uncertainty-and-doubt.jpeg"
   },
   {
     "number": "53",
@@ -424,7 +424,7 @@
     "name": "The Bitcoin Standard",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/TheBitcoinStandard.jpeg"
+    "image": "/images/cards/series-1/the-bitcoin-standard.jpeg"
   },
   {
     "number": "54",
@@ -432,7 +432,7 @@
     "name": "The Creature From Jekyll Island",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/TheCreatureFromJekyllIsland.jpeg"
+    "image": "/images/cards/series-1/the-creature-from-jekyll-island.jpeg"
   },
   {
     "number": "55",
@@ -440,7 +440,7 @@
     "name": "The Marshmallow Experiment",
     "type": "Education",
     "rarity": "C",
-    "image": "/images/cards/TheMarshmallowExperiment.jpeg"
+    "image": "/images/cards/series-1/the-marshmallow-experiment.jpeg"
   },
 
   {
@@ -449,7 +449,7 @@
     "name": "Resources",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/Resources.jpeg"
+    "image": "/images/cards/series-1/resources.jpeg"
   },
   {
     "number": "57",
@@ -457,7 +457,7 @@
     "name": "Hardware Wallet",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/HardwareWallet.jpeg"
+    "image": "/images/cards/series-1/hardware-wallet.jpeg"
   },
   {
     "number": "58",
@@ -465,7 +465,7 @@
     "name": "Bitcoin Exchange",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/BitcoinExchange.jpeg"
+    "image": "/images/cards/series-1/bitcoin-exchange.jpeg"
   },
   {
     "number": "59",
@@ -473,7 +473,7 @@
     "name": "Fold",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/Fold.jpeg"
+    "image": "/images/cards/series-1/fold.jpeg"
   },
   {
     "number": "60",
@@ -481,7 +481,7 @@
     "name": "BTC Times",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/BTCTimes.webp"
+    "image": "/images/cards/series-1/btc-times.webp"
   },
   {
     "number": "61",
@@ -489,7 +489,7 @@
     "name": "Geyser",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/Geyser.jpeg"
+    "image": "/images/cards/series-1/geyser.jpeg"
   },
   {
     "number": "63",
@@ -497,7 +497,7 @@
     "name": "Coinbeast",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/CoinBeast.jpeg"
+    "image": "/images/cards/series-1/coinbeast.jpeg"
   },
   {
     "number": "64",
@@ -505,7 +505,7 @@
     "name": "Coinbits",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/Coinbits.jpeg"
+    "image": "/images/cards/series-1/coinbits.jpeg"
   },
   {
     "number": "65",
@@ -513,6 +513,6 @@
     "name": "Swan",
     "type": "Resources",
     "rarity": "C",
-    "image": "/images/cards/Swan.jpeg"
+    "image": "/images/cards/series-1/swan.jpeg"
   }
 ]
