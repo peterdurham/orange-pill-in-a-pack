@@ -13,7 +13,7 @@ const legendaries = setList.filter((card) => card.rarity === "L"); // 5
 
 const rarePool = [];
 rares.forEach((rare) => {
-  if (rare.number !== "01" && rare.number !== "02")
+  if (rare.number !== "1" && rare.number !== "2")
     for (let i = 0; i < 999; i++) {
       rarePool.push(rare.number);
     }
@@ -36,16 +36,21 @@ const RandomPack = () => {
 
   useEffect(() => {
     if (!clicked) {
-      const commonsOpened = Array.from({ length: 9 }, () =>
-        Math.floor(Math.random() * 47)
-      ).map((index) => commons[index]);
+      const commonsPool = [...commons];
+      let commonsOpened = [];
 
+      for (let i = 0; i < 9; i++) {
+        const indexOpened = Math.floor(Math.random() * commonsPool.length);
+        const cardOpened = commonsPool.splice(indexOpened, 1)[0];
+        commonsOpened.push(cardOpened);
+      }
+
+      const rareIndex = Math.floor(Math.random() * 7994);
       const rareOpened = setList.find(
-        (card) => card.number === rarePool[Math.floor(Math.random() * 7994)]
+        (card) => card.number === rarePool[rareIndex]
       );
 
       const packContents = [].concat(rareOpened).concat(commonsOpened);
-
       setContents(packContents);
     }
   }, [clicked]);

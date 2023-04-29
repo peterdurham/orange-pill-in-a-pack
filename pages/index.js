@@ -80,6 +80,7 @@ function Home() {
               src="/images/logos/BTC_MAIN_LOGO.png"
               height={105}
               width={150}
+              alt="bitcoin trading cards logo"
             />
           </div>
           <LinksWrapper>

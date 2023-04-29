@@ -48,46 +48,14 @@ function Deck({ contents, isMobile }) {
           config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 },
         };
       });
-      // if (!down && gone.size === cards.length)
-      //   setTimeout(() => {
-      //     gone.clear();
-      //     api.start((i) => to(i));
-      //   }, 600);
     }
   );
-
-  function handleClick(e) {
-    if (e.detail === 2) {
-      console.log("double click");
-      setClicked(true);
-      setTimeout(() => {
-        setClicked(false);
-      }, 600);
-    }
-
-    // switch (e.detail) {
-    //   case 1:
-    //     console.log("click");
-    //     break;
-    //   case 2:
-    //     console.log("double click");
-    //     break;
-    //   case 3:
-    //     console.log("triple click");
-    //     break;
-    // }
-  }
 
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
     <>
       {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div
-          className={styles.deck}
-          key={i}
-          style={{ x, y }}
-          onClick={handleClick}
-        >
+        <animated.div className={styles.deck} key={i} style={{ x, y }}>
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
             {...bind(i)}
