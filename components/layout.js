@@ -38,6 +38,13 @@ const BannerWrapper = styled.div`
   & a {
     color: black;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+      margin-left: 8px;
+    }
   }
   & a:hover {
     text-decoration: underline;
@@ -49,7 +56,7 @@ const BannerWrapper = styled.div`
 
 const Layout = ({ children }) => {
   const router = useRouter();
-  console.log("router", router);
+
   function handleClick(e) {
     // console.log("clicked");
   }
@@ -76,7 +83,19 @@ const Layout = ({ children }) => {
       {router.route === "/" && (
         <BannerWrapper>
           <Link href="https://btc-tc.com/collections/frontpage">
-            Pre-order series 2
+            Pre-order series 2 packs
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+              <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
+            </svg>
           </Link>
         </BannerWrapper>
       )}
