@@ -69,12 +69,14 @@ const List = () => {
                 <p style={{ width: "70px" }}>{card.number}</p>
                 <p style={{ width: "250px", fontWeight: "700" }}>{card.name}</p>
                 <p style={{ width: "150px" }}>
+                  {card.rarity === "X" && "Lost Card"}{" "}
                   {card.rarity === "L" && "Legendary"}{" "}
                   {card.rarity === "R" && "Rare"}
                   {card.rarity === "UR" && "Ultrarare"}{" "}
                   {card.rarity === "C" && "Common"}
                 </p>
                 <p style={{ width: "150px", fontStyle: "italic" }}>
+                  {card.rarity === "X" && "21"}
                   {card.rarity === "L" && "100"} {card.rarity === "R" && "999"}
                   {card.rarity === "UR" && "500"}{" "}
                   {card.rarity === "C" && "1,892"}
