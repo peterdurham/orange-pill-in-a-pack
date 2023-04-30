@@ -98,12 +98,28 @@ const SeriesOne = () => {
           Total Printed
         </h2>
         <p>98,920 - Total cards</p>
-        <p>88,913 - Commons</p>
-        <p>5,994 - Rares</p>
-        <p>1,500 - Ultra-rares</p>
-        <p>500 - Legendaries</p>
-        <p>42 - Lost cards</p>
-        <p>15 - Unique 1/1 cards</p>
+        <p>
+          88,913 - Commons{" "}
+          <span style={{ fontStyle: "italic" }}>(47 cards)</span>
+        </p>
+        <p>
+          5,994 - Rares <span style={{ fontStyle: "italic" }}>(6 cards)</span>
+        </p>
+        <p>
+          1,500 - Ultra-rares{" "}
+          <span style={{ fontStyle: "italic" }}>(3 cards)</span>
+        </p>
+        <p>
+          500 - Legendaries{" "}
+          <span style={{ fontStyle: "italic" }}>(5 cards)</span>
+        </p>
+        <p>
+          42 - Lost cards <span style={{ fontStyle: "italic" }}>(2 cards)</span>
+        </p>
+        <p>
+          15 - Unique 1/1 cards{" "}
+          <span style={{ fontStyle: "italic" }}>(15 cards)</span>
+        </p>
       </ContainerWrapper>
     </Layout>
   );

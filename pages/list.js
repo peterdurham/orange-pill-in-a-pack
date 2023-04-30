@@ -33,6 +33,9 @@ const ListItemWrapper = styled.div`
   .list-item:hover {
     background: rgb(249, 250, 251);
   }
+  @media (max-width: 720px) {
+    width: 100%;
+  }
 `;
 
 const List = () => {
