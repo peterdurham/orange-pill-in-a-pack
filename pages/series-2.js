@@ -129,7 +129,7 @@ const SeriesTwo = () => {
         <p>243,100 - Total cards</p>
         <p>
           222,025 - Commons{" "}
-          <span style={{ fontStyle: "italic" }}>(47 cards)</span>
+          <span style={{ fontStyle: "italic" }}>(93 cards)</span>
         </p>
         <p>
           10,000 - Rares <span style={{ fontStyle: "italic" }}>(10 cards)</span>
