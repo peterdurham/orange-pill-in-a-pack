@@ -3,6 +3,27 @@ import setList from "../data/set-list.json";
 import CardStack from "../components/card-stack";
 import Layout from "@/components/layout";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import styled from "styled-components";
+
+const PackWrapper = styled.div`
+  text-align: center;
+
+  & img {
+    width: 170px;
+    height: 285px;
+    cursor: pointer;
+    margin: 16px auto;
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    transition: 0.7s all 0.2s;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+`;
 
 const commons = setList.filter((card) => card.rarity === "C"); // 47
 const rares = setList.filter((card) => card.rarity === "R"); // 8
@@ -57,17 +78,10 @@ const RandomPack = () => {
 
   return (
     <Layout>
-      <div style={{ textAlign: "center" }}>
+      <PackWrapper>
         <img
           src="/images/packs/unopened_s1_pack.jpg"
           style={{
-            width: "170px",
-            height: "285px",
-            cursor: "pointer",
-            margin: "16px auto",
-            position: "absolute",
-            top: "200px",
-            transform: "translate(-50%, -50%)",
             boxShadow: isPackEmpty
               ? "0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3)"
               : "none",
@@ -80,7 +94,7 @@ const RandomPack = () => {
             }, 200);
           }}
         />
-      </div>
+      </PackWrapper>
 
       {contents.length && !clicked && (
         <CardStack
