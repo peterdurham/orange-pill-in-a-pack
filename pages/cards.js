@@ -51,7 +51,7 @@ const CardsWrapper = styled.div`
     width: 100%;
     box-shadow: 1px 1px 6px rgb(0 0 0 / 45%);
   }
-  @media (max-width: 720px) {
+  @media (max-width: 850px) {
     & .card-container {
       grid-gap: 32px;
     }
