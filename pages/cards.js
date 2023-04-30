@@ -18,6 +18,7 @@ const HeadlineWrapper = styled.div`
     background-color: rgb(209, 213, 219);
   }
   & .headline-text {
+    min-width: 200px;
     background: #f4f7f8;
     font-size: 18px;
     position: absolute;
@@ -35,8 +36,9 @@ const HeadlineWrapper = styled.div`
 `;
 
 const CardsWrapper = styled.div`
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
+
   & .card-container {
     display: grid;
     max-width: 800px;
@@ -48,6 +50,16 @@ const CardsWrapper = styled.div`
     height: 100%;
     width: 100%;
     box-shadow: 1px 1px 6px rgb(0 0 0 / 45%);
+  }
+  @media (max-width: 720px) {
+    & .card-container {
+      grid-gap: 32px;
+    }
+  }
+  @media (max-width: 480px) {
+    & .card-container {
+      grid-gap: 64px;
+    }
   }
 `;
 
