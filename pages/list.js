@@ -3,6 +3,16 @@ import setList from "../data/set-list.json";
 import Link from "next/link";
 import styled from "styled-components";
 
+const HeaderWrapper = styled.div`
+  width: 1000px;
+  margin: 20px auto 0 auto;
+
+  @media (max-width: 720px) {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+`;
+
 const ListItemWrapper = styled.div`
   width: 1000px;
   margin: 0 auto;
@@ -34,18 +44,28 @@ const ListItemWrapper = styled.div`
     background: rgb(249, 250, 251);
   }
   @media (max-width: 720px) {
-    width: 100%;
+    width: calc(100% - 48px);
+    margin-left: 24px;
+    margin-right: 24px;
+
+    & .card-type {
+      display: none;
+    }
+    & .list-item {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
   }
 `;
 
 const List = () => {
   return (
     <Layout>
-      <div style={{ width: "1000px", margin: "20px auto 0 auto" }}>
+      <HeaderWrapper>
         <h1 style={{ fontSize: "18px", fontWeight: "400" }}>
           Card List - Series 1
         </h1>
-      </div>
+      </HeaderWrapper>
       <ListItemWrapper>
         <div
           style={{
@@ -60,7 +80,9 @@ const List = () => {
           <p style={{ width: "250px" }}>Name</p>
           <p style={{ width: "150px" }}>Rarity</p>
           <p style={{ width: "150px" }}># Printed</p>
-          <p style={{ width: "250px" }}>Type</p>
+          <p className="card-type" style={{ width: "250px" }}>
+            Type
+          </p>
         </div>
         {setList.map((card) => {
           return (
@@ -84,7 +106,9 @@ const List = () => {
                   {card.rarity === "UR" && "500"}{" "}
                   {card.rarity === "C" && "1,892"}
                 </p>
-                <p style={{ width: "250px" }}>{card.type}</p>
+                <p className="card-type" style={{ width: "250px" }}>
+                  {card.type}
+                </p>
               </div>
             </Link>
           );
