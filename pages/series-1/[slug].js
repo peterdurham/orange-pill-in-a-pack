@@ -102,7 +102,7 @@ export default function Page({ card }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <CardDetailsWrapper>
-        <h1 className="mobile-title">Mobile Title here</h1>
+        <h1 className="mobile-title">{card.name}</h1>
         <CardImageWrapper>
           <Image src={card.image} height={427.5} width={300} alt={card.name} />
           <CardNavigation
