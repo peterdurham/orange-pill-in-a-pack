@@ -3,6 +3,43 @@ import { useSprings, animated, to as interpolate } from "@react-spring/web";
 import { useDrag } from "react-use-gesture";
 
 import styles from "styles/CardStack.module.css";
+import styled from "styled-components";
+
+const DeckWrapper = styled.div`
+  background: lightblue;
+  cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
+      39 39,
+    auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+
+  & .deck {
+    position: absolute;
+    margin-top: 800px;
+    width: 300px;
+    height: 200px;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+  }
+
+  & .deck > div {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 200px;
+    height: 285px;
+    will-change: transform;
+    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+      0 10px 10px -10px rgba(50, 50, 73, 0.3);
+    border-bottom: 1px solid grey;
+  }
+`;
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
@@ -11,7 +48,7 @@ const to = (i) => ({
   scale: 1,
   // rot: -10 + Math.random() * 20,
   rot: 0,
-  delay: i * 21,
+  delay: i * 1, // 21 shows rare border
 });
 const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
@@ -72,8 +109,8 @@ function Deck({ contents, isMobile }) {
 
 export default function CardStack({ contents, isMobile }) {
   return (
-    <div className={styles.container}>
+    <DeckWrapper>
       <Deck contents={contents} isMobile={isMobile} />
-    </div>
+    </DeckWrapper>
   );
 }
