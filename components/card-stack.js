@@ -57,10 +57,10 @@ const trans = (r, s) =>
     r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
-function Deck({ contents, isMobile }) {
+function Deck({ contents, isMobile, setIsPackEmpty }) {
   const cards = contents.map((item) => item?.image);
   const [clicked, setClicked] = useState(false);
-  const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
+  const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out;
   const [props, api] = useSprings(cards.length, (i) => ({
     ...to(i),
     from: from(i),
@@ -71,6 +71,10 @@ function Deck({ contents, isMobile }) {
       const trigger = isMobile ? velocity > 0.2 : velocity >= 0; // If you flick hard enough it should trigger the card to fly out
       const dir = xDir < 0 ? -1 : 1; // Direction should either point left or right
       if (!down && trigger) gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
+      console.log("index", index);
+      if (index === 0) {
+        setIsPackEmpty(true);
+      }
       api.start((i) => {
         if (index !== i) return; // We're only interested in changing spring-data for the current spring
         const isGone = gone.has(index);
@@ -107,10 +111,14 @@ function Deck({ contents, isMobile }) {
   );
 }
 
-export default function CardStack({ contents, isMobile }) {
+export default function CardStack({ contents, isMobile, setIsPackEmpty }) {
   return (
     <DeckWrapper>
-      <Deck contents={contents} isMobile={isMobile} />
+      <Deck
+        contents={contents}
+        isMobile={isMobile}
+        setIsPackEmpty={setIsPackEmpty}
+      />
     </DeckWrapper>
   );
 }

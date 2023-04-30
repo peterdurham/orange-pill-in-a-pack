@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import setList from "../data/set-list.json";
 import CardStack from "../components/card-stack";
 import Layout from "@/components/layout";
-import Button from "@/components/button";
-import Link from "next/link";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 const commons = setList.filter((card) => card.rarity === "C"); // 47
@@ -31,6 +29,7 @@ legendaries.forEach((legendary) => {
 
 const RandomPack = () => {
   const [contents, setContents] = useState([]);
+  const [isPackEmpty, setIsPackEmpty] = useState(false);
   const [clicked, setClicked] = useState(false);
   const { width } = useWindowDimensions();
 
@@ -52,6 +51,7 @@ const RandomPack = () => {
 
       const packContents = [].concat(rareOpened).concat(commonsOpened);
       setContents(packContents);
+      setIsPackEmpty(false);
     }
   }, [clicked]);
 
@@ -68,6 +68,9 @@ const RandomPack = () => {
             position: "absolute",
             top: "200px",
             transform: "translate(-50%, -50%)",
+            boxShadow: isPackEmpty
+              ? "0 12.5px 100px -10px rgba(50, 50, 73, 0.5), 0 10px 10px -10px rgba(50, 50, 73, 0.3)"
+              : "none",
             // margin: "0 auto",
           }}
           onClick={() => {
@@ -80,7 +83,11 @@ const RandomPack = () => {
       </div>
 
       {contents.length && !clicked && (
-        <CardStack contents={contents} isMobile={width <= 600} />
+        <CardStack
+          contents={contents}
+          isMobile={width <= 600}
+          setIsPackEmpty={setIsPackEmpty}
+        />
       )}
 
       {/* <div style={{ margin: "16px auto", width: "150px" }}>
