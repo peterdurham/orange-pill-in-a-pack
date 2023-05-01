@@ -15,12 +15,24 @@ const CardNaivgationWrapper = styled.div`
 
 const CardImageWrapper = styled.div`
   margin: 0 auto;
-  background: black;
+  // background: black;
   height: 427.5px;
   width: 300px;
   box-shadow: 1px 1px 6px rgb(0 0 0 / 45%);
 
+  & .card-image {
+    height: 427.5px;
+    width: 300px;
+  }
+
   @media (max-width: 720px) {
+    width: 100%;
+    height: auto;
+
+    & .card-image {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 
@@ -41,6 +53,12 @@ const CardDetailsWrapper = styled.div`
   & p {
     margin-bottom: 10px;
   }
+
+  & .card-details {
+    width: 480px;
+    margin-left: 60px;
+  }
+
   @media (max-width: 720px) {
     & .mobile-hidden {
       display: none;
@@ -51,7 +69,16 @@ const CardDetailsWrapper = styled.div`
   }
 
   @media (max-width: 720px) {
+    width: calc(100% - 48px);
+    margin-left: 24px;
+    margin-right: 24px;
     flex-direction: column;
+
+    & .card-details {
+      margin-top: 20px;
+      margin-left: 0;
+      width: 100%;
+    }
   }
 `;
 
@@ -102,16 +129,18 @@ export default function Page({ card }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <CardDetailsWrapper>
-        <h1 className="mobile-title">{card.name}</h1>
+        <h1 className="mobile-title" style={{ marginBottom: "20px" }}>
+          {card.name}
+        </h1>
         <CardImageWrapper>
-          <Image src={card.image} height={427.5} width={300} alt={card.name} />
+          <img src={card.image} className="card-image" alt={card.name} />
           <CardNavigation
             nextCard={nextCard}
             prevCard={prevCard}
             className="mobile-hidden"
           />
         </CardImageWrapper>
-        <div style={{ width: "480px", marginLeft: "60px" }}>
+        <div className="card-details">
           <h2
             style={{ marginBottom: "8px", fontSize: "32px" }}
             className="mobile-hidden"
