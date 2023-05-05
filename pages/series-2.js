@@ -2,33 +2,45 @@ import Layout from "@/components/layout";
 import styled from "styled-components";
 
 const ContainerWrapper = styled.div`
-  width: 480px;
+  width: 640px;
   margin: 60px auto;
+  border: 1px solid #dee3e7;
+  border-radius: 16px;
 
-  h1 {
-    margin-bottom: 10px;
+  & .series-header {
+    padding: 16px;
+    background: #f8f8f8;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom: 1px solid #dee3e7;
   }
 
   .pack-info {
+    padding: 16px;
     display: flex;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #dee3e7;
   }
   .pack-text {
     width: 60%;
+    padding-right: 32px;
   }
   .pack-image {
     width: 40%;
-    padding-top: 10px;
+    padding-top: 16px;
+  }
+  .total-printed {
+    background: #f8f8f8;
+    padding: 16px;
   }
   @media (max-width: 720px) {
     & {
-      width: calc(100% - 80px);
-      margin-left: 40px;
-      margin-right: 40px;
+      width: calc(100% - 48px);
+      margin-left: 24px;
+      margin-right: 24px;
     }
     .pack-text {
       width: 100%;
-      margin-bottom: 40px;
+      padding-right: 0px;
     }
     .pack-image {
       width: 100%;
@@ -38,15 +50,14 @@ const ContainerWrapper = styled.div`
     }
   }
 `;
-
 const SeriesTwo = () => {
   return (
     <Layout>
       <ContainerWrapper>
-        <h1>About Series 2</h1>
-        <p style={{ marginBottom: "40px", fontStyle: "italic" }}>
-          Coming May 17, 2022
-        </p>
+        <div className="series-header">
+          <h1>About Series 2</h1>
+          <p style={{ fontStyle: "italic" }}>Coming May 17, 2022</p>
+        </div>
 
         <div className="pack-info">
           <div className="pack-text">
@@ -63,12 +74,6 @@ const SeriesTwo = () => {
           <img
             className="pack-image"
             src="/images/packs/fud-busters-pack.jpg"
-            style={{
-              width: "100px",
-              height: "142.5px",
-              cursor: "pointer",
-              margin: "0 auto",
-            }}
           />
         </div>
 
@@ -87,12 +92,6 @@ const SeriesTwo = () => {
           <img
             className="pack-image"
             src="/images/packs/bitcoin-2023-miami-pack.jpg"
-            style={{
-              width: "100px",
-              height: "142.5px",
-              cursor: "pointer",
-              margin: "0 auto",
-            }}
           />
         </div>
 
@@ -114,42 +113,37 @@ const SeriesTwo = () => {
           <img
             className="pack-image"
             src="/images/packs/bitcoin-2023-whale-pack.jpg"
-            style={{
-              width: "100px",
-              height: "142.5px",
-              cursor: "pointer",
-              margin: "0 auto",
-            }}
           />
         </div>
 
-        <h2 style={{ marginTop: "40px", marginBottom: "10px" }}>
-          Total Printed
-        </h2>
-        <p>243,100 - Total cards</p>
-        <p>
-          222,025 - Commons{" "}
-          <span style={{ fontStyle: "italic" }}>(93 cards)</span>
-        </p>
-        <p>
-          10,000 - Rares <span style={{ fontStyle: "italic" }}>(10 cards)</span>
-        </p>
-        <p>
-          9,000 - Ultra-rares{" "}
-          <span style={{ fontStyle: "italic" }}>(18 cards)</span>
-        </p>
-        <p>
-          1,470 - Mega-rares{" "}
-          <span style={{ fontStyle: "italic" }}>(18 cards)</span>
-        </p>
-        <p>
-          500 - Legendaries{" "}
-          <span style={{ fontStyle: "italic" }}>(5 cards)</span>
-        </p>
-        <p>
-          105 - Twenty-One Club cards{" "}
-          <span style={{ fontStyle: "italic" }}>(5 cards)</span>
-        </p>
+        <div className="total-printed">
+          <h2 style={{ marginBottom: "10px" }}>Total Printed</h2>
+          <p>243,100 - Total cards</p>
+          <p>
+            222,025 - Commons{" "}
+            <span style={{ fontStyle: "italic" }}>(93 cards)</span>
+          </p>
+          <p>
+            10,000 - Rares{" "}
+            <span style={{ fontStyle: "italic" }}>(10 cards)</span>
+          </p>
+          <p>
+            9,000 - Ultra-rares{" "}
+            <span style={{ fontStyle: "italic" }}>(18 cards)</span>
+          </p>
+          <p>
+            1,470 - Mega-rares{" "}
+            <span style={{ fontStyle: "italic" }}>(18 cards)</span>
+          </p>
+          <p>
+            500 - Legendaries{" "}
+            <span style={{ fontStyle: "italic" }}>(5 cards)</span>
+          </p>
+          <p>
+            105 - Twenty-One Club cards{" "}
+            <span style={{ fontStyle: "italic" }}>(5 cards)</span>
+          </p>
+        </div>
       </ContainerWrapper>
     </Layout>
   );

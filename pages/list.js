@@ -8,6 +8,7 @@ const HeaderWrapper = styled.div`
   margin: 20px auto 0 auto;
 
   @media (max-width: 720px) {
+    width: calc(100% - 48px);
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -20,22 +21,35 @@ const ListItemWrapper = styled.div`
   cursor: pointer;
   font-weight: 400;
 
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(209, 213, 219);
+  }
+
   a {
     color: #000;
     text-decoration: none;
   }
 
   & .list-item {
-    border: 1px solid rgb(209, 213, 219);
+    border-bottom: 1px solid rgb(209, 213, 219);
+    border-left: 1px solid rgb(209, 213, 219);
+    border-right: 1px solid rgb(209, 213, 219);
     padding: 8px 16px;
-    border-bottom: none;
     background: #fff;
   }
-  & .list-item:first-child {
+  & a:first-child .list-item {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-top: 1px solid rgb(209, 213, 219);
   }
-  .list-item:last-child {
+  & a:last-child .list-item {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: 1px solid rgb(209, 213, 219);
@@ -62,20 +76,14 @@ const List = () => {
   return (
     <Layout>
       <HeaderWrapper>
-        <h1 style={{ fontSize: "18px", fontWeight: "400" }}>
+        <h1
+          style={{ fontSize: "18px", fontWeight: "400", marginBottom: "20px" }}
+        >
           Card List - Series 1
         </h1>
       </HeaderWrapper>
       <ListItemWrapper>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            fontWeight: "700",
-            textDecoration: "underline",
-            padding: "16px",
-          }}
-        >
+        <div className="list-header">
           <p style={{ width: "70px" }}>Number</p>
           <p style={{ width: "250px" }}>Name</p>
           <p style={{ width: "150px" }}>Rarity</p>

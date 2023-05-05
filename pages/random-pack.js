@@ -23,6 +23,20 @@ const PackWrapper = styled.div`
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
   }
+  & .click-text {
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    z-index: 10;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
 `;
 
 const commons = setList.filter((card) => card.rarity === "C"); // 47
@@ -49,13 +63,15 @@ legendaries.forEach((legendary) => {
 });
 
 const RandomPack = () => {
+  const [didMount, setDidMount] = useState(false);
+  const [packCount, setPackCount] = useState(0);
   const [contents, setContents] = useState([]);
-  const [isPackEmpty, setIsPackEmpty] = useState(false);
+  const [isPackEmpty, setIsPackEmpty] = useState(true);
   const [clicked, setClicked] = useState(false);
   const { width } = useWindowDimensions();
 
   useEffect(() => {
-    if (!clicked) {
+    if (!clicked && didMount) {
       const commonsPool = [...commons];
       let commonsOpened = [];
 
@@ -73,17 +89,24 @@ const RandomPack = () => {
       const packContents = [].concat(rareOpened).concat(commonsOpened);
       setContents(packContents);
       setIsPackEmpty(false);
+      setPackCount(packCount + 1);
+    }
+    if (!didMount) {
+      setDidMount(true);
     }
   }, [clicked]);
 
   return (
     <Layout>
       <PackWrapper>
+        {isPackEmpty && packCount === 0 && (
+          <div className="click-text">Click to open</div>
+        )}
         <img
           src="/images/packs/unopened_s1_pack.jpg"
           style={{
             boxShadow: isPackEmpty
-              ? "0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3)"
+              ? "0 12.5px 100px -10px rgba(50, 50, 73, 0.3), 0 10px 10px -10px rgba(50, 50, 73, 0.3)"
               : "none",
             // margin: "0 auto",
           }}
@@ -96,7 +119,7 @@ const RandomPack = () => {
         />
       </PackWrapper>
 
-      {contents.length && !clicked && (
+      {contents.length > 0 && !clicked && (
         <CardStack
           contents={contents}
           isMobile={width <= 600}

@@ -2,33 +2,43 @@ import Layout from "@/components/layout";
 import styled from "styled-components";
 
 const ContainerWrapper = styled.div`
-  width: 480px;
+  width: 640px;
   margin: 60px auto;
+  border: 1px solid #dee3e7;
+  border-radius: 16px;
 
-  h1 {
-    margin-bottom: 10px;
+  & .series-header {
+    padding: 16px;
+    background: #f8f8f8;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom: 1px solid #dee3e7;
   }
 
   .pack-info {
+    padding: 16px;
     display: flex;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #dee3e7;
   }
   .pack-text {
     width: 60%;
   }
   .pack-image {
     width: 40%;
-    padding-top: 10px;
+    padding-top: 16px;
+  }
+  .total-printed {
+    background: #f8f8f8;
+    padding: 16px;
   }
   @media (max-width: 720px) {
     & {
-      width: calc(100% - 80px);
-      margin-left: 40px;
-      margin-right: 40px;
+      width: calc(100% - 48px);
+      margin-left: 24px;
+      margin-right: 24px;
     }
     .pack-text {
       width: 100%;
-      margin-bottom: 40px;
     }
     .pack-image {
       width: 100%;
@@ -43,10 +53,10 @@ const SeriesOne = () => {
   return (
     <Layout>
       <ContainerWrapper>
-        <h1>About Series 1</h1>
-        <p style={{ marginBottom: "40px", fontStyle: "italic" }}>
-          Released November 10, 2022
-        </p>
+        <div className="series-header">
+          <h1>About Series 1</h1>
+          <p style={{ fontStyle: "italic" }}>Released November 10, 2022</p>
+        </div>
 
         <div className="pack-info">
           <div className="pack-text">
@@ -63,12 +73,6 @@ const SeriesOne = () => {
           <img
             className="pack-image"
             src="/images/packs/unopened_s1_pack.jpg"
-            style={{
-              width: "100px",
-              height: "142.5px",
-              cursor: "pointer",
-              margin: "0 auto",
-            }}
           />
         </div>
 
@@ -85,41 +89,36 @@ const SeriesOne = () => {
           <img
             className="pack-image"
             src="/images/packs/unopened_pb2022_pack.jpg"
-            style={{
-              width: "100px",
-              height: "142.5px",
-              cursor: "pointer",
-              margin: "0 auto",
-            }}
           />
         </div>
 
-        <h2 style={{ marginTop: "40px", marginBottom: "10px" }}>
-          Total Printed
-        </h2>
-        <p>98,920 - Total cards</p>
-        <p>
-          88,913 - Commons{" "}
-          <span style={{ fontStyle: "italic" }}>(47 cards)</span>
-        </p>
-        <p>
-          5,994 - Rares <span style={{ fontStyle: "italic" }}>(6 cards)</span>
-        </p>
-        <p>
-          1,500 - Ultra-rares{" "}
-          <span style={{ fontStyle: "italic" }}>(3 cards)</span>
-        </p>
-        <p>
-          500 - Legendaries{" "}
-          <span style={{ fontStyle: "italic" }}>(5 cards)</span>
-        </p>
-        <p>
-          42 - Lost cards <span style={{ fontStyle: "italic" }}>(2 cards)</span>
-        </p>
-        <p>
-          15 - Unique 1/1 cards{" "}
-          <span style={{ fontStyle: "italic" }}>(15 cards)</span>
-        </p>
+        <div className="total-printed">
+          <h2 style={{ marginBottom: "10px" }}>Total Printed</h2>
+          <p>98,920 - Total cards</p>
+          <p>
+            88,913 - Commons{" "}
+            <span style={{ fontStyle: "italic" }}>(47 cards)</span>
+          </p>
+          <p>
+            5,994 - Rares <span style={{ fontStyle: "italic" }}>(6 cards)</span>
+          </p>
+          <p>
+            1,500 - Ultra-rares{" "}
+            <span style={{ fontStyle: "italic" }}>(3 cards)</span>
+          </p>
+          <p>
+            500 - Legendaries{" "}
+            <span style={{ fontStyle: "italic" }}>(5 cards)</span>
+          </p>
+          <p>
+            42 - Lost cards{" "}
+            <span style={{ fontStyle: "italic" }}>(2 cards)</span>
+          </p>
+          <p>
+            15 - Unique 1/1 cards{" "}
+            <span style={{ fontStyle: "italic" }}>(15 cards)</span>
+          </p>
+        </div>
       </ContainerWrapper>
     </Layout>
   );

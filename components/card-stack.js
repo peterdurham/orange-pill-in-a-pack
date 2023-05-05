@@ -6,18 +6,18 @@ import styles from "styles/CardStack.module.css";
 import styled from "styled-components";
 
 const DeckWrapper = styled.div`
-  background: lightblue;
   cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
       39 39,
     auto;
   display: flex;
   align-items: center;
-  height: 100%;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
 
   & .deck {
     position: absolute;
-    margin-top: 800px;
     width: 300px;
     height: 200px;
     will-change: transform;
@@ -44,7 +44,7 @@ const DeckWrapper = styled.div`
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
   x: 0,
-  y: i * -1.5,
+  y: i * -1, // Change to -1.5 to increase card stack height
   scale: 1,
   // rot: -10 + Math.random() * 20,
   rot: 0,
@@ -71,7 +71,6 @@ function Deck({ contents, isMobile, setIsPackEmpty }) {
       const trigger = isMobile ? velocity > 0.2 : velocity >= 0; // If you flick hard enough it should trigger the card to fly out
       const dir = xDir < 0 ? -1 : 1; // Direction should either point left or right
       if (!down && trigger) gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
-      console.log("index", index);
       if (index === 0) {
         setIsPackEmpty(true);
       }

@@ -19,7 +19,7 @@ const HeadlineWrapper = styled.div`
   }
   & .headline-text {
     min-width: 200px;
-    background: #f4f7f8;
+    background: #fff;
     font-size: 18px;
     position: absolute;
     padding-left: 16px;
@@ -30,6 +30,7 @@ const HeadlineWrapper = styled.div`
   }
   @media (max-width: 800px) {
     width: calc(100% - 48px);
+    margin-top: 12px;
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -38,6 +39,7 @@ const HeadlineWrapper = styled.div`
 const CardsWrapper = styled.div`
   margin-left: 32px;
   margin-right: 32px;
+  margin-bottom: 64px;
 
   & .card-container {
     display: grid;
@@ -58,7 +60,7 @@ const CardsWrapper = styled.div`
   }
   @media (max-width: 480px) {
     & .card-container {
-      grid-gap: 64px;
+      grid-gap: 32px;
     }
   }
 `;

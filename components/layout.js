@@ -75,9 +75,15 @@ const Layout = ({ children }) => {
         <Link href="/" className="home-link">
           Orange Pill in a Pack
         </Link>
-        <Link href="/random-pack" className="site-link" onClick={handleClick()}>
-          Open a Pack
-        </Link>
+        {router.route !== "/random-pack" && (
+          <Link
+            href="/random-pack"
+            className="site-link"
+            onClick={handleClick()}
+          >
+            Open a Pack
+          </Link>
+        )}
       </HeaderStyles>
       {router.route === "/" && (
         <BannerWrapper>
