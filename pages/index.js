@@ -84,23 +84,6 @@ function Home() {
             />
           </div>
           <LinksWrapper>
-            <Link href="/random-pack">
-              <Button>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h5v-2H4V7h16v12h-5v2h5c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
-                  <path d="M13 21v-5h3l-4-5-4 5h3v5z"></path>
-                </svg>
-                Open a Booster Pack
-              </Button>
-            </Link>
             <Link href="/series-1/cards">
               <Button href="/cards">
                 <svg
@@ -116,6 +99,23 @@ function Home() {
                   <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"></path>
                 </svg>
                 Series 1 Cards
+              </Button>
+            </Link>
+            <Link href="/random-pack">
+              <Button>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h5v-2H4V7h16v12h-5v2h5c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path>
+                  <path d="M13 21v-5h3l-4-5-4 5h3v5z"></path>
+                </svg>
+                Open a Booster Pack
               </Button>
             </Link>
 
