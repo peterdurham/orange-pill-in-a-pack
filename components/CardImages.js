@@ -3,11 +3,12 @@ import Link from "next/link";
 import setList from "../data/set-list.json";
 import Layout from "@/components/layout";
 import styled from "styled-components";
+import CardList from "@/components/CardList";
 
 const HeadlineWrapper = styled.div`
   width: 800px;
   height: 36px;
-  margin: 40px auto 10px auto;
+  margin: 16px auto 10px auto;
   display: flex;
   align-items: center;
   position: relative;
@@ -65,9 +66,9 @@ const CardsWrapper = styled.div`
   }
 `;
 
-const Cards = () => {
+const CardImages = () => {
   return (
-    <Layout>
+    <>
       <HeadlineWrapper>
         <div className="headline-line"></div>
         <div className="headline-text">Series 1 - {setList.length} cards</div>
@@ -81,7 +82,8 @@ const Cards = () => {
           ))}
         </div>
       </CardsWrapper>
-    </Layout>
+    </>
   );
 };
-export default Cards;
+
+export default CardImages;

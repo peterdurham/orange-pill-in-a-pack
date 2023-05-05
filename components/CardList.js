@@ -3,12 +3,33 @@ import setList from "../data/set-list.json";
 import Link from "next/link";
 import styled from "styled-components";
 
-const HeaderWrapper = styled.div`
+const HeadlineWrapper = styled.div`
   width: 1000px;
-  margin: 20px auto 0 auto;
+  height: 36px;
+  margin: 16px auto 10px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
 
-  @media (max-width: 720px) {
+  & .headline-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(209, 213, 219);
+  }
+  & .headline-text {
+    min-width: 200px;
+    background: #fff;
+    font-size: 18px;
+    position: absolute;
+    padding-left: 16px;
+    padding-right: 16px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 800px) {
     width: calc(100% - 48px);
+    margin-top: 12px;
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -72,16 +93,13 @@ const ListItemWrapper = styled.div`
   }
 `;
 
-const List = () => {
+const CardList = () => {
   return (
-    <Layout>
-      <HeaderWrapper>
-        <h1
-          style={{ fontSize: "18px", fontWeight: "400", marginBottom: "20px" }}
-        >
-          Card List - Series 1
-        </h1>
-      </HeaderWrapper>
+    <>
+      <HeadlineWrapper>
+        <div className="headline-line"></div>
+        <div className="headline-text">Series 1 - {setList.length} cards</div>
+      </HeadlineWrapper>
       <ListItemWrapper>
         <div className="list-header">
           <p style={{ width: "70px" }}>Number</p>
@@ -122,8 +140,8 @@ const List = () => {
           );
         })}
       </ListItemWrapper>
-    </Layout>
+    </>
   );
 };
 
-export default List;
+export default CardList;

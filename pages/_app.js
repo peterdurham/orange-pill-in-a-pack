@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "@/styles/globals.css";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
+  const [cardView, setCardView] = useState("images");
   return (
     <>
       <Script
@@ -22,7 +24,7 @@ export default function App({ Component, pageProps }) {
           `,
         }}
       />
-      <Component {...pageProps} />
+      <Component {...pageProps} cardView={cardView} setCardView={setCardView} />
     </>
   );
 }
