@@ -68,21 +68,15 @@ const CardsWrapper = styled.div`
 
 const CardImages = () => {
   return (
-    <>
-      <HeadlineWrapper>
-        <div className="headline-line"></div>
-        <div className="headline-text">Series 1 - {setList.length} cards</div>
-      </HeadlineWrapper>
-      <CardsWrapper>
-        <div className="card-container">
-          {setList.map((card) => (
-            <Link href={`/series-1/${card.slug}`} key={card.number}>
-              <img className="card-image" src={card.image} alt={card.name} />
-            </Link>
-          ))}
-        </div>
-      </CardsWrapper>
-    </>
+    <CardsWrapper>
+      <div className="card-container">
+        {setList.map((card) => (
+          <Link href={`/series-1/${card.slug}`} key={card.number}>
+            <img className="card-image" src={card.image} alt={card.name} />
+          </Link>
+        ))}
+      </div>
+    </CardsWrapper>
   );
 };
 

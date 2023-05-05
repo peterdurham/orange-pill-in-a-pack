@@ -4,7 +4,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const HeadlineWrapper = styled.div`
-  width: 1000px;
+  width: 800px;
   height: 36px;
   margin: 16px auto 10px auto;
   display: flex;
@@ -36,7 +36,7 @@ const HeadlineWrapper = styled.div`
 `;
 
 const ListItemWrapper = styled.div`
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
   margin-bottom: 60px;
   cursor: pointer;
@@ -95,52 +95,45 @@ const ListItemWrapper = styled.div`
 
 const CardList = () => {
   return (
-    <>
-      <HeadlineWrapper>
-        <div className="headline-line"></div>
-        <div className="headline-text">Series 1 - {setList.length} cards</div>
-      </HeadlineWrapper>
-      <ListItemWrapper>
-        <div className="list-header">
-          <p style={{ width: "70px" }}>Number</p>
-          <p style={{ width: "250px" }}>Name</p>
-          <p style={{ width: "150px" }}>Rarity</p>
-          <p style={{ width: "150px" }}># Printed</p>
-          <p className="card-type" style={{ width: "250px" }}>
-            Type
-          </p>
-        </div>
-        {setList.map((card) => {
-          return (
-            <Link href={`/series-1/${card.slug}`} key={card.number}>
-              <div
-                className="list-item"
-                style={{ display: "flex", justifyContent: "space-between" }}
-              >
-                <p style={{ width: "70px" }}>{card.number}</p>
-                <p style={{ width: "250px", fontWeight: "700" }}>{card.name}</p>
-                <p style={{ width: "150px" }}>
-                  {card.rarity === "X" && "Lost Card"}{" "}
-                  {card.rarity === "L" && "Legendary"}{" "}
-                  {card.rarity === "R" && "Rare"}
-                  {card.rarity === "UR" && "Ultrarare"}{" "}
-                  {card.rarity === "C" && "Common"}
-                </p>
-                <p style={{ width: "150px", fontStyle: "italic" }}>
-                  {card.rarity === "X" && "21"}
-                  {card.rarity === "L" && "100"} {card.rarity === "R" && "999"}
-                  {card.rarity === "UR" && "500"}{" "}
-                  {card.rarity === "C" && "1,892"}
-                </p>
-                <p className="card-type" style={{ width: "250px" }}>
-                  {card.type}
-                </p>
-              </div>
-            </Link>
-          );
-        })}
-      </ListItemWrapper>
-    </>
+    <ListItemWrapper>
+      <div className="list-header">
+        <p style={{ width: "70px" }}>Number</p>
+        <p style={{ width: "250px" }}>Name</p>
+        <p style={{ width: "150px" }}>Rarity</p>
+        <p style={{ width: "150px" }}># Printed</p>
+        <p className="card-type" style={{ width: "250px" }}>
+          Type
+        </p>
+      </div>
+      {setList.map((card) => {
+        return (
+          <Link href={`/series-1/${card.slug}`} key={card.number}>
+            <div
+              className="list-item"
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
+              <p style={{ width: "70px" }}>{card.number}</p>
+              <p style={{ width: "250px", fontWeight: "700" }}>{card.name}</p>
+              <p style={{ width: "150px" }}>
+                {card.rarity === "X" && "Lost Card"}{" "}
+                {card.rarity === "L" && "Legendary"}{" "}
+                {card.rarity === "R" && "Rare"}
+                {card.rarity === "UR" && "Ultrarare"}{" "}
+                {card.rarity === "C" && "Common"}
+              </p>
+              <p style={{ width: "150px", fontStyle: "italic" }}>
+                {card.rarity === "X" && "21"}
+                {card.rarity === "L" && "100"} {card.rarity === "R" && "999"}
+                {card.rarity === "UR" && "500"} {card.rarity === "C" && "1,892"}
+              </p>
+              <p className="card-type" style={{ width: "250px" }}>
+                {card.type}
+              </p>
+            </div>
+          </Link>
+        );
+      })}
+    </ListItemWrapper>
   );
 };
 
