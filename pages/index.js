@@ -46,10 +46,10 @@ function Home() {
   return (
     <>
       <Head>
-        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{siteTitle}</title>
+        <meta name="description" content="" />
         <meta
           name="description"
           content="Search site for Orange Pill in a Pack Bitcoin Trading Cards images, set lists, print run stats, booster pack simulator, and card listings for sale or trade."
@@ -58,15 +58,25 @@ function Home() {
           name="keywords"
           content="Bitcoin Trading Cards, Orange Pill in a Pack, FUD Busters, btc-tc, card lists, card images, set lists, booster packs, btc-tc listings, btc-tc marketplace, Pacific Bitcoin, scarce city auctions"
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.orangepillinapack.com/" />
+        <meta
+          name="twitter:title"
+          content="Orange Pill in a Pack - Bitcoin Trading Cards"
+        />
         <meta name="og:title" content="Orange Pill in a Pack" />
+        <meta
+          name="og:image"
+          content="https://orangepillinapack.com/_ipx/w_256,q_75/%2Fimages%2Flogos%2FBTC_MAIN_LOGO.png?url=%2Fimages%2Flogos%2FBTC_MAIN_LOGO.png&w=256&q=75"
+        />
         <meta
           name="og:description"
           content="Search site for Orange Pill in a Pack Bitcoin Trading Cards images, set lists, print run stats, booster pack simulator, and card listings for sale or trade."
         />
-        <meta name="og:url" content="https://orangepillinapack.com/" />
-        <meta name="og:locale" content="en_US" />
         <meta name="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="og:url" content="https://orangepillinapack.com/" />
+        <meta name="og:site_name" content="Orange Pill in a Pack" />
+        <meta name="og:locale" content="en_US" />
       </Head>
       <Layout>
         <HomeContainer>
@@ -151,7 +161,7 @@ function Home() {
                 About Series 2 - FUD Busters
               </Button>
             </Link>
-            <Link href="/secondary-market">
+            {/* <Link href="/secondary-market">
               <Button>
                 <svg
                   stroke="currentColor"
@@ -166,7 +176,7 @@ function Home() {
                 </svg>
                 Secondary Market
               </Button>
-            </Link>
+            </Link> */}
             <Link href="https://btc-tc.com/" target="_blank">
               <Button>
                 <svg

@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        {/* <meta name="og:site_name" content="Orange Pill in a Pack" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <HeaderStyles>
