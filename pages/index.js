@@ -46,10 +46,7 @@ function Home() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{siteTitle}</title>
-        <meta name="description" content="" />
         <meta
           name="description"
           content="Search site for Orange Pill in a Pack Bitcoin Trading Cards images, set lists, print run stats, booster pack simulator, and card listings for sale or trade."
