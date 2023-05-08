@@ -4,6 +4,7 @@ import CardStack from "../components/card-stack";
 import Layout from "@/components/layout";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import styled from "styled-components";
+import * as gtag from "../lib/gtag";
 
 const PackWrapper = styled.div`
   text-align: center;
@@ -90,6 +91,12 @@ const RandomPack = () => {
       setContents(packContents);
       setIsPackEmpty(false);
       setPackCount(packCount + 1);
+      gtag.event({
+        action: "pack_open",
+        category: "pack_event",
+        label: "series_1_pack_label",
+        value: "series_1_pack",
+      });
     }
     if (!didMount) {
       setDidMount(true);
