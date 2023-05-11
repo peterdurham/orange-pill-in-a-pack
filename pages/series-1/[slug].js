@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import setList from "../../data/set-list.json";
+import activeListings from "../../data/active-listings.json";
 import styled from "styled-components";
 import Layout from "@/components/layout";
 import CardNavigation from "@/components/CardNavigation";
+import Listing from "@/components/Listing";
 
 const CardNaivgationWrapper = styled.div`
   display: none;
@@ -82,6 +84,40 @@ const CardDetailsWrapper = styled.div`
   }
 `;
 
+const ListingsWrapper = styled.div`
+  width: 720px;
+  margin: 60px auto;
+  border: 1px solid #dee3e7;
+  border-radius: 16px;
+
+  & .page-header {
+    padding: 16px;
+    background: #f8f8f8;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom: 1px solid #dee3e7;
+  }
+
+  & .listing {
+    display: flex;
+    padding: 16px;
+    text-decoration: none;
+    color: #000;
+  }
+  & .title-link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  @media (max-width: 720px) {
+    & {
+      width: calc(100% - 48px);
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+`;
+
 export default function Page({ card }) {
   if (!card) {
     return <div>404</div>;
@@ -92,6 +128,11 @@ export default function Page({ card }) {
   const cardNumber = Number(card.number);
   const twitterURL = `https://www.orangepillinapack.com/series-1/${card.slug}`;
   const imageURL = `https://www.orangepillinapack.com/images/cards/series-1/`;
+
+  const listings = activeListings.filter(
+    (listing) => listing.slug === card.slug
+  );
+  console.log("listings", listings);
 
   let prevCard, nextCard;
 
@@ -199,6 +240,24 @@ export default function Page({ card }) {
       <CardNaivgationWrapper>
         <CardNavigation nextCard={nextCard} prevCard={prevCard} />
       </CardNaivgationWrapper>
+      <ListingsWrapper>
+        {listings.length > 0 && (
+          <h1 style={{ padding: "16px" }} className="page-header">
+            Current Listings
+          </h1>
+        )}
+        {listings.map((listing, index) => (
+          <Listing
+            key={index}
+            url={listing.url}
+            imageURL={listing.imageURL}
+            title={listing.title}
+            price={listing.price}
+            sellerName={listing.sellerName}
+            sellerURL={listing.sellerURL}
+          />
+        ))}
+      </ListingsWrapper>
     </Layout>
   );
 }
