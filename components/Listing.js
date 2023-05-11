@@ -26,7 +26,7 @@ const Listing = ({ url, imageURL, title, price, sellerName, sellerURL }) => {
         <Link target="_blank" href={url} className="title-link">
           <h2>{title}</h2>
         </Link>
-        <div style={{ margin: "4px auto" }}>${price}</div>
+        <div style={{ margin: "4px auto" }}>${price.toFixed(2)}</div>
         <Link href={sellerURL} target="_blank">
           {sellerName}
         </Link>
