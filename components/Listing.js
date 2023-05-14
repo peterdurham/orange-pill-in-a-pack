@@ -2,7 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const CardImageWrapper = styled.div`
-  width: 200px;
+  width: 80px;
   padding-right: 16px;
 
   & img {
@@ -24,7 +24,7 @@ const Listing = ({ url, imageURL, title, price, sellerName, sellerURL }) => {
       </Link>
       <div>
         <Link target="_blank" href={url} className="title-link">
-          <h2>{title}</h2>
+          <p style={{ fontWeight: 700 }}>{title}</p>
         </Link>
         <div style={{ margin: "4px auto" }}>${price.toFixed(2)}</div>
         <Link href={sellerURL} target="_blank">
