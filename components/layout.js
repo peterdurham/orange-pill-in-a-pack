@@ -12,7 +12,8 @@ const HeaderStyles = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  width: 100%;
+  width: 1000px;
+  margin: 0 auto;
   padding: 0 24px;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -30,6 +31,9 @@ const HeaderStyles = styled.div`
   .site-link {
     color: #000;
     text-decoration: none;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
   }
 `;
 
