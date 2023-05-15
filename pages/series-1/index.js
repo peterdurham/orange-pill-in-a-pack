@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ContainerWrapper = styled.div`
   width: 640px;
-  margin: 60px auto;
+  margin: 20px auto;
   border: 1px solid #dee3e7;
   border-radius: 16px;
 

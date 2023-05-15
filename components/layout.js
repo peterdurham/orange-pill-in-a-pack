@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const HeaderStyles = styled.div`
-  border-bottom: 1px solid rgb(209, 213, 219);
+  // border-bottom: 1px solid rgb(209, 213, 219);
   font-size: 18px;
   font-weight: 600;
   display: flex;
@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
       </HeaderStyles>
       {router.route === "/" && (
         <BannerWrapper>
-          <Link href="https://btc-tc.com/collections/frontpage">
+          <Link href="https://btc-tc.com/collections/frontpage" target="_blank">
             Pre-order series 2 packs
             <svg
               stroke="currentColor"
