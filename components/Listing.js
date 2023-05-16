@@ -1,8 +1,12 @@
 import Link from "next/link";
 import styled from "styled-components";
 
+const ListingWrapper = styled.div`
+  border-bottom: 1px solid rgb(209, 213, 219);
+`;
+
 const CardImageWrapper = styled.div`
-  width: 80px;
+  width: 100px;
   padding-right: 16px;
 
   & img {
@@ -14,24 +18,65 @@ const CardImageWrapper = styled.div`
   }
 `;
 
-const Listing = ({ url, imageURL, title, price, sellerName, sellerURL }) => {
+const Listing = ({
+  url,
+  imageURL,
+  title,
+  price,
+  currency,
+  site,
+  sellerName,
+  sellerURL,
+}) => {
   return (
-    <div className="listing">
+    <ListingWrapper className="listing">
       <Link target="_blank" href={url}>
         <CardImageWrapper>
           <img src={imageURL} />
         </CardImageWrapper>
       </Link>
-      <div>
+      <div style={{ width: "100%" }}>
         <Link target="_blank" href={url} className="title-link">
-          <p style={{ fontWeight: 700 }}>{title}</p>
+          <p style={{ fontWeight: 400 }}>{title}</p>
         </Link>
-        <div style={{ margin: "4px auto" }}>${price.toFixed(2)}</div>
-        <Link href={sellerURL} target="_blank">
-          {sellerName}
-        </Link>
+
+        <div
+          style={{
+            width: "20%",
+            fontSize: "20px",
+            fontWeight: "700",
+            marginTop: "6px",
+            marginBottom: "4px",
+          }}
+        >
+          <Link target="_blank" href={url} className="title-link">
+            {currency === "USD" && "$"}
+            {price.toFixed(2)}
+          </Link>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <Link target="_blank" href={url} className="title-link">
+              {site}{" "}
+            </Link>
+            <span>
+              ({" "}
+              <Link href={sellerURL} target="_blank">
+                {sellerName}
+              </Link>{" "}
+              )
+            </span>
+          </div>
+        </div>
+        <div style={{ width: "80%" }}></div>
       </div>
-    </div>
+    </ListingWrapper>
   );
 };
 

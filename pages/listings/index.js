@@ -60,6 +60,8 @@ const Listings = () => {
                 imageURL={listing.imageURL}
                 title={listing.title}
                 price={listing.price}
+                currency={listing.currency}
+                site={listing.site}
                 sellerName={listing.sellerName}
                 sellerURL={listing.sellerURL}
               />

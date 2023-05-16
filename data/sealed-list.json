@@ -1,0 +1,51 @@
+[
+  {
+    "type": "box",
+    "slug": "series-1-box",
+    "name": "Series 1 Booster Box",
+    "series": "series-1"
+    // "image": "/images/cards/series-1/pacific-bitcoin-van.jpeg"
+  },
+  {
+    "type": "pack",
+    "slug": "series-1-pack",
+    "name": "Series 1 Booster Pack",
+    "series": "series-1",
+    "image": "/images/packs/unopened_s1_pack.jpg"
+  },
+  {
+    "type": "pack",
+    "slug": "pb-2022-pack",
+    "name": "Pacific Bitcoin 2022 Booster Pack",
+    "series": "series-1",
+    "image": "/images/packs/unopened_pb2022_pack.jpg"
+  },
+  {
+    "type": "box",
+    "slug": "series-2-box",
+    "name": "Series 2 Booster Box",
+    "series": "series-2",
+    "image": ""
+  },
+  {
+    "type": "pack",
+    "slug": "series-2-pack",
+    "name": "Series 2 Booster Pack",
+    "series": "series-2",
+    "image": "/images/packs/fud-busters-pack.jpg"
+  },
+  {
+    "type": "pack",
+    "slug": "miami-2023-pack",
+    "name": "Bitcoin 2023 Booster Pack",
+    "series": "series-2",
+    "image": "/images/packs/bitcoin-2023-miami-pack.jpg"
+  },
+  {
+    "type": "pack",
+    "slug": "miami-2023-whale-pack",
+    "name": "Bitcoin 2023 Whale Booster Pack",
+    "series": "series-2",
+    "image": "/images/packs/bitcoin-2023-whale-pack.jpg"
+  }
+]
