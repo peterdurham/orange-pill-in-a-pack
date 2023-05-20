@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://scarce.city/auctions/1-of-1-free-ross",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/f955613828ef56daf7b336ecacd5a343bd069e59-960x1280.jpg?auto=format",
+    "title": "1/1 Free Ross - Lenticular Card",
+    "series": "series-2",
+    "slug": "free-ross-lenticular",
+    "type": "auction",
+    "sellerName": "Alladan Flinn"
+  },
+  {
+    "url": "https://scarce.city/auctions/bitcoin-trading-cards-fomo-printing-plate",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/90e7ad058ba06b166ebd3cda799f4c81804c062f-1280x1280.jpg?auto=format",
+    "title": "S1C51 | FOMO - 1/1 Cyan Print Plate + Card",
+    "series": "series-1",
+    "slug": "fomo-print-plate",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1c16-foss-2",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/4baa0ad6025350fea1e47162a3df77eff1dcbdd2-1110x1306.png?auto=format",
+    "title": "S1C16 | Greg Foss (15/21)",
+    "series": "series-1",
+    "slug": "greg-foss",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1c4-tone-vays",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/a2f553243edaa448c0efd7ed414655440394c24b-3024x4032.jpg?auto=format",
+    "title": "S1C4 | Tone Vays (034/100)",
+    "series": "series-1",
+    "slug": "tone-vays",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1c14-max-keiser-2",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/0faaef464daa0ec5410d5b670d9527f416e301a0-3024x4032.jpg?auto=format",
+    "title": "S1C14 | Max Keiser (006/100)",
+    "series": "series-1",
+    "slug": "max-keiser",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/set-pb-2022-chase-cards",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/0fc54cc7d049ec12a9b03dd9c6ce39abb44cd0a5-1280x832.jpg?auto=format",
+    "title": "Set of Pacific Bitcoin 2022 Chase (#/999) Cards",
+    "series": "series-1",
+    "slug": "pb-2022-rare-set",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1c5-wordlofrusty-signed-3",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/9b25c04b2afd4299ec0df1b2053c43dba7971724-1215x1280.jpg?auto=format",
+    "title": "S1C5 | WorldOfRusty Artist-Signed Card LE (3/5)",
+    "series": "series-1",
+    "slug": "world-of-rusty",
+    "type": "auction",
+    "sellerName": "World of Rusty"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1-lot-red-ultra-rares",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/d429a647763fb8257c442351a6c9f6554075456a-1280x960.jpg?auto=format",
+    "title": "S1 Lot: 3x Red Ultra Rares (#/500)",
+    "series": "series-1",
+    "slug": "set-of-ultrarares",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1-lot-blue-rares",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/97efce67600f94e10a0afa9f8f2272d8bd6cfee2-1280x960.jpg?auto=format",
+    "title": "S1 Lot: 6x Blue Rares (#/999)",
+    "series": "series-1",
+    "slug": "set-of-rares",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1-sealed-box",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/2848cb4f730ef0ce86b57df3940f5de862595d8d-960x1280.jpg?auto=format",
+    "title": "S1 “Orange Pill in a Pack” Box (24 packs)",
+    "series": "series-1",
+    "slug": "booster-box",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/s1-pack-lava",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/e1a803056e012324cca1f59fadd8effefba12e55-4032x3024.jpg?auto=format",
+    "title": "12 Packs of S1 Orange Pill in a Pack (4 winners)",
+    "series": "series-1",
+    "slug": "12-booster-packs-lava-auction",
+    "type": "auction",
+    "sellerName": "Collector"
+  },
+  {
+    "url": "https://scarce.city/auctions/pacific-bitcoin-2022-pack",
+    "imageURL": "https://cdn.sanity.io/images/w4avejpr/production/f8c359ce1590c648b79db4e32ca18c1aff78dd13-4032x3024.png?auto=format",
+    "title": "Pack of Pacific Bitcoin 2022 (x1)",
+    "series": "series-1",
+    "slug": "pb-2022-pack",
+    "type": "auction",
+    "sellerName": "Collector"
+  }
+]

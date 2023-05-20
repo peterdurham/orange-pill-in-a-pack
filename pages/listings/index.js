@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import activeListings from "../../data/active-listings.json";
 import Listing from "@/components/Listing";
+import scarceCityListings from "../../data/scarce-city-listings.json";
 
 const listings = [
   {
@@ -49,7 +50,21 @@ const Listings = () => {
     <Layout>
       <ListingsWrapper>
         <h1 className="page-header">Current Listings</h1>
-        {/* <h1 style={{ padding: "16px" }}>Scarce.city</h1> */}
+        <h1 style={{ padding: "16px" }}>Scarce.city</h1>
+        <div>
+          {scarceCityListings.map((listing, index) => {
+            return (
+              <Listing
+                key={index}
+                url={listing.url}
+                imageURL={listing.imageURL}
+                title={listing.title}
+                site={"Scarce.city"}
+                sellerName={listing.sellerName}
+              />
+            );
+          })}
+        </div>
         <h1 style={{ padding: "16px" }}>ebay</h1>
         <div>
           {activeListings.map((listing, index) => {

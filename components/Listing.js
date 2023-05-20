@@ -40,20 +40,22 @@ const Listing = ({
           <p style={{ fontWeight: 400 }}>{title}</p>
         </Link>
 
-        <div
-          style={{
-            width: "20%",
-            fontSize: "20px",
-            fontWeight: "700",
-            marginTop: "6px",
-            marginBottom: "4px",
-          }}
-        >
-          <Link target="_blank" href={url} className="title-link">
-            {currency === "USD" && "$"}
-            {price.toFixed(2)}
-          </Link>
-        </div>
+        {price && (
+          <div
+            style={{
+              width: "20%",
+              fontSize: "20px",
+              fontWeight: "700",
+              marginTop: "6px",
+              marginBottom: "4px",
+            }}
+          >
+            <Link target="_blank" href={url} className="title-link">
+              {currency === "USD" && "$"}
+              {price.toFixed(2)}
+            </Link>
+          </div>
+        )}
         <div
           style={{
             width: "100%",
@@ -67,9 +69,13 @@ const Listing = ({
             </Link>
             <span>
               ({" "}
-              <Link href={sellerURL} target="_blank">
-                {sellerName}
-              </Link>{" "}
+              {sellerURL ? (
+                <Link href={sellerURL} target="_blank">
+                  {sellerName}
+                </Link>
+              ) : (
+                <span>{sellerName}</span>
+              )}{" "}
               )
             </span>
           </div>
