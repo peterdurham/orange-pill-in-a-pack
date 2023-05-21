@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import setList from "../data/set-list.json";
 import Link from "next/link";
 import Layout from "@/components/layout";
 import Button from "@/components/button";
@@ -78,11 +76,6 @@ function Home() {
       <Layout>
         <HomeContainer>
           <div className="image-row">
-            {/* {/* <Image
-              src="/images/logos/mtg-logo-orange.webp"
-              height={112}
-              width={250}
-            /> */}
             <Image
               src="/images/logos/BTC_MAIN_LOGO.png"
               height={105}
@@ -177,22 +170,6 @@ function Home() {
                 About Series 2 - FUD Busters
               </Button>
             </Link>
-            {/* <Link href="/secondary-market">
-              <Button>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M8 13v4H6v2h3v2h2v-2h2v2h2v-2.051c1.968-.249 3.5-1.915 3.5-3.949 0-1.32-.65-2.484-1.64-3.213A3.982 3.982 0 0 0 18 9c0-1.858-1.279-3.411-3-3.858V3h-2v2h-2V3H9v2H6v2h2v6zm6.5 4H10v-4h4.5c1.103 0 2 .897 2 2s-.897 2-2 2zM10 7h4c1.103 0 2 .897 2 2s-.897 2-2 2h-4V7z"></path>
-                </svg>
-                Secondary Market
-              </Button>
-            </Link> */}
             <Link href="https://btc-tc.com/" target="_blank">
               <Button>
                 <svg
