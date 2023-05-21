@@ -6,7 +6,7 @@ import Button from "@/components/button";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
-  width: 320px;
+  width: 1000px;
   margin: 20px auto 40px auto;
 
   & .image-row {
@@ -37,6 +37,64 @@ const LinksWrapper = styled.div`
     }
   }
 `;
+
+const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const CardWrapper = styled.div`
+  border: 1px solid #dee3e7;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  width: 313px;
+  height: 200px;
+  border-radius: 8px;
+  margin: 10px;
+  transition: 0.2s all;
+
+  &:hover {
+    // transform: translate(0, -2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+    //   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: #121212;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .card-text {
+    padding: 8px 16px;
+    font-weight: 600;
+  }
+`;
+
+const Card = ({
+  text,
+  src = "/images/cards/series-1/pacific-bitcoin-surfboard.jpeg",
+  alt = "Card alt",
+}) => {
+  return (
+    <CardWrapper>
+      <Link href="/random-pack" className="card-link">
+        <div>
+          <img className="card-image" src={src} alt={alt} />
+        </div>
+        <div className="card-text">{text}</div>
+      </Link>
+    </CardWrapper>
+  );
+};
 
 function Home() {
   const siteTitle = "Orange Pill in a Pack - Bitcoin Trading Cards";
@@ -84,6 +142,35 @@ function Home() {
             />
           </div>
           <LinksWrapper>
+            <h1 style={{ margin: "0 10px 10px 10px" }}>
+              Series Two - FUD Busters
+            </h1>
+            <CardContainer>
+              <Card text="Set Images" />
+              <Card text="Set List" />
+              <Card text="Open a Pack" />
+              <Card text="About Series 2" />
+              <Card text="Listings" />
+              <Card text="Buy a pack" />
+            </CardContainer>
+            <h1 style={{ margin: "30px 10px 10px 10px" }}>
+              Series One - Orange Pill in a Pack
+            </h1>
+            <CardContainer>
+              <Card text="Set Images" />
+              <Card
+                text="Set List"
+                src="/images/cards/series-1/world-of-rusty.jpeg"
+              />
+              <Card
+                text="Open a Pack"
+                src="/images/packs/unopened_s1_pack.jpg"
+              />
+              <Card text="About Series 1" />
+              <Card text="Listings" />
+              <Card text="Buy a pack" />
+            </CardContainer>
+
             <Link href="/series-1/cards">
               <Button href="/cards">
                 <svg
