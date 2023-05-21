@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import setList from "../../data/set-list.json";
+import seriesOneList from "../../data/series-1-list.json";
 import activeListings from "../../data/active-listings.json";
 import styled from "styled-components";
 import Layout from "@/components/layout";
@@ -132,11 +132,10 @@ export default function Page({ card }) {
   const listings = activeListings.filter(
     (listing) => listing.slug === card.slug
   );
-  console.log("listings", listings);
 
   let prevCard, nextCard;
 
-  setList.forEach((setCard) => {
+  seriesOneList.forEach((setCard) => {
     const setCardNumber = Number(setCard.number);
 
     if (cardNumber - 1 === setCardNumber) {
@@ -240,37 +239,38 @@ export default function Page({ card }) {
       <CardNaivgationWrapper>
         <CardNavigation nextCard={nextCard} prevCard={prevCard} />
       </CardNaivgationWrapper>
-      <ListingsWrapper>
-        {listings.length > 0 && (
+      {listings.length > 0 && (
+        <ListingsWrapper>
           <h1 style={{ padding: "16px" }} className="page-header">
             Current Listings
           </h1>
-        )}
-        {listings.map((listing, index) => (
-          <Listing
-            key={index}
-            url={listing.url}
-            imageURL={listing.imageURL}
-            title={listing.title}
-            price={listing.price}
-            sellerName={listing.sellerName}
-            sellerURL={listing.sellerURL}
-          />
-        ))}
-      </ListingsWrapper>
+
+          {listings.map((listing, index) => (
+            <Listing
+              key={index}
+              url={listing.url}
+              imageURL={listing.imageURL}
+              title={listing.title}
+              price={listing.price}
+              sellerName={listing.sellerName}
+              sellerURL={listing.sellerURL}
+            />
+          ))}
+        </ListingsWrapper>
+      )}
     </Layout>
   );
 }
 
 export async function getStaticPaths() {
-  const paths = setList.map((card) => {
+  const paths = seriesOneList.map((card) => {
     return { params: { slug: card.slug } };
   });
   return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
-  const card = setList.find((card) => card.slug === params.slug);
+  const card = seriesOneList.find((card) => card.slug === params.slug);
   if (!card) {
     return {
       notFound: true,

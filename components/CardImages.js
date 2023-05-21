@@ -1,41 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import setList from "../data/set-list.json";
-import Layout from "@/components/layout";
+import seriesOneList from "../data/series-1-list.json";
 import styled from "styled-components";
-import CardList from "@/components/CardList";
-
-const HeadlineWrapper = styled.div`
-  width: 800px;
-  height: 36px;
-  margin: 16px auto 10px auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-
-  & .headline-line {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(209, 213, 219);
-  }
-  & .headline-text {
-    min-width: 200px;
-    background: #fff;
-    font-size: 18px;
-    position: absolute;
-    padding-left: 16px;
-    padding-right: 16px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  @media (max-width: 800px) {
-    width: calc(100% - 48px);
-    margin-top: 12px;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-`;
 
 const CardsWrapper = styled.div`
   margin-left: 32px;
@@ -70,7 +36,7 @@ const CardImages = () => {
   return (
     <CardsWrapper>
       <div className="card-container">
-        {setList.map((card) => (
+        {seriesOneList.map((card) => (
           <Link href={`/series-1/${card.slug}`} key={card.number}>
             <img className="card-image" src={card.image} alt={card.name} />
           </Link>

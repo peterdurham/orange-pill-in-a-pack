@@ -12,7 +12,7 @@ const HeaderStyles = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  width: 1000px;
+  width: 848px;
   margin: 0 auto;
   padding: 0 24px;
   -webkit-user-select: none; /* Safari */
@@ -65,9 +65,6 @@ const BannerWrapper = styled.div`
 const Layout = ({ children }) => {
   const router = useRouter();
 
-  function handleClick(e) {
-    // console.log("clicked");
-  }
   return (
     <div>
       <Head>
@@ -79,12 +76,8 @@ const Layout = ({ children }) => {
         <Link href="/" className="home-link">
           Orange Pill in a Pack
         </Link>
-        {router.route !== "/random-pack" && (
-          <Link
-            href="/random-pack"
-            className="site-link"
-            onClick={handleClick()}
-          >
+        {router.route !== "/pack-simulator/series-1" && (
+          <Link href="/pack-simulator/series-1" className="site-link">
             Open a Pack
           </Link>
         )}
