@@ -3,6 +3,38 @@ import styled from "styled-components";
 
 const ListingWrapper = styled.div`
   border-bottom: 1px solid rgb(209, 213, 219);
+
+  .listing-price {
+    width: 20%;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+`;
+
+const AuctionLabelWrapper = styled.div`
+  color: rgb(183, 110, 0);
+  background-color: rgba(255, 171, 0, 0.16);
+  padding: 0px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 5px 0;
+`;
+
+const ListingLabelWrapper = styled.div`
+  color: rgb(27, 128, 106);
+  background-color: rgba(54, 179, 126, 0.16);
+  padding: 0px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 5px 0;
 `;
 
 const CardImageWrapper = styled.div`
@@ -21,6 +53,7 @@ const CardImageWrapper = styled.div`
 const Listing = ({
   url,
   imageURL,
+  type,
   title,
   price,
   currency,
@@ -28,6 +61,7 @@ const Listing = ({
   sellerName,
   sellerURL,
 }) => {
+  console.log("type", type);
   return (
     <ListingWrapper className="listing">
       <Link target="_blank" href={url}>
@@ -39,22 +73,19 @@ const Listing = ({
         <Link target="_blank" href={url} className="title-link">
           <p style={{ fontWeight: 400 }}>{title}</p>
         </Link>
-
         {price && (
-          <div
-            style={{
-              width: "20%",
-              fontSize: "20px",
-              fontWeight: "700",
-              marginTop: "6px",
-              marginBottom: "4px",
-            }}
-          >
+          <div className="listing-price">
             <Link target="_blank" href={url} className="title-link">
               {currency === "USD" && "$"}
               {price.toFixed(2)}
             </Link>
           </div>
+        )}
+        {type === "auction" && (
+          <AuctionLabelWrapper>Auction</AuctionLabelWrapper>
+        )}
+        {type === "listing" && (
+          <ListingLabelWrapper>Listing</ListingLabelWrapper>
         )}
         <div
           style={{

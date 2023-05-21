@@ -57,6 +57,7 @@ const Listings = () => {
               <Listing
                 key={index}
                 url={listing.url}
+                type={listing.type}
                 imageURL={listing.imageURL}
                 title={listing.title}
                 site={"Scarce.city"}
@@ -72,6 +73,7 @@ const Listings = () => {
               <Listing
                 key={index}
                 url={listing.url}
+                type={listing.type}
                 imageURL={listing.imageURL}
                 title={listing.title}
                 price={listing.price}
