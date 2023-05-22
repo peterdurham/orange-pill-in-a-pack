@@ -157,7 +157,10 @@ function Home() {
               Series One - Orange Pill in a Pack
             </h1>
             <CardContainer>
-              <Card text="Set Images" />
+              <Card
+                text="Set Images"
+                src="/images/cards/series-1/satoshi-limited-edition.jpeg"
+              />
               <Card
                 text="Set List"
                 src="/images/cards/series-1/world-of-rusty.jpeg"
@@ -166,8 +169,14 @@ function Home() {
                 text="Open a Pack"
                 src="/images/packs/unopened_s1_pack.jpg"
               />
-              <Card text="About Series 1" />
-              <Card text="Listings" />
+              <Card
+                text="About Series 1"
+                src="/images/cards/series-1/blockchain-ultrarare.jpeg"
+              />
+              <Card
+                text="Listings"
+                src="/images/cards/series-1/zimbabwe-dollar.jpeg"
+              />
               <Card text="Buy a pack" />
             </CardContainer>
 
