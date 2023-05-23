@@ -83,10 +83,11 @@ const Card = ({
   text,
   src = "/images/cards/series-1/pacific-bitcoin-surfboard.jpeg",
   alt = "Card alt",
+  href = "/random-pack",
 }) => {
   return (
     <CardWrapper>
-      <Link href="/random-pack" className="card-link">
+      <Link href={href} className="card-link">
         <div>
           <img className="card-image" src={src} alt={alt} />
         </div>
@@ -146,38 +147,52 @@ function Home() {
               Series Two - FUD Busters
             </h1>
             <CardContainer>
-              <Card text="Set Images" />
-              <Card text="Set List" />
-              <Card text="Open a Pack" />
-              <Card text="About Series 2" />
-              <Card text="Listings" />
-              <Card text="Buy a pack" />
+              <Card
+                text="Set Images"
+                src="/images/homepage/government-cant-stop-bitcoin.jpg"
+              />
+              <Card text="Set List" src="/images/homepage/mother-satoshi.jpg" />
+              <Card
+                text="Open a Pack"
+                src="/images/packs/fud-busters-pack.jpg"
+              />
+              <Card
+                text="About Series 2"
+                src="/images/homepage/fud-busters.jpg"
+              />
+              <Card text="Listings" src="/images/homepage/btc-vs-crypto.jpg" />
+              <Card text="Buy a pack" src="/images/homepage/21-million.jpg" />
             </CardContainer>
             <h1 style={{ margin: "30px 10px 10px 10px" }}>
               Series One - Orange Pill in a Pack
             </h1>
             <CardContainer>
               <Card
+                href="/series-1/images"
                 text="Set Images"
                 src="/images/cards/series-1/satoshi-limited-edition.jpeg"
               />
               <Card
+                href="/series-1/list"
                 text="Set List"
                 src="/images/cards/series-1/world-of-rusty.jpeg"
               />
               <Card
+                href="/pack-simulator/series-1"
                 text="Open a Pack"
                 src="/images/packs/unopened_s1_pack.jpg"
               />
               <Card
+                href="/series-1"
                 text="About Series 1"
                 src="/images/cards/series-1/blockchain-ultrarare.jpeg"
               />
               <Card
+                href="/listings"
                 text="Listings"
                 src="/images/cards/series-1/zimbabwe-dollar.jpeg"
               />
-              <Card text="Buy a pack" />
+              <Card href="/series-1/images" text="Buy a pack" />
             </CardContainer>
 
             <Link href="/series-1/cards">
