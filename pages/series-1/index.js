@@ -2,8 +2,8 @@ import Layout from "@/components/layout";
 import styled from "styled-components";
 
 const ContainerWrapper = styled.div`
-  width: 640px;
-  margin: 20px auto;
+  width: 800px;
+  margin: 20px auto 60px auto;
   border: 1px solid #dee3e7;
   border-radius: 16px;
 
@@ -56,6 +56,7 @@ const SeriesOne = () => {
         <div className="series-header">
           <h1>About Series 1</h1>
           <p style={{ fontStyle: "italic" }}>Released November 10, 2022</p>
+          <p style={{ fontStyle: "italic" }}>Sold Out in 3 months</p>
         </div>
 
         <div className="pack-info">

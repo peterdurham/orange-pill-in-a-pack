@@ -37,7 +37,6 @@ function Deck({ contents }) {
       api.start((i) => {
         if (index !== i) return; // We're only interested in changing spring-data for the current spring
         const isGone = gone.has(index);
-        console.log(isGone, isGone);
         const x = isGone ? (200 + window.innerWidth) * dir : down ? mx : 0; // When a card is gone it flys out left or right, otherwise goes back to zero
         const rot = mx / 100 + (isGone ? dir * 10 * velocity : 0); // How much the card tilts, flicking it harder makes it rotate faster
         const scale = down ? 1.1 : 1; // Active cards lift up a bit
@@ -59,26 +58,12 @@ function Deck({ contents }) {
 
   function handleClick(e) {
     if (e.detail === 2) {
-      console.log("double click");
       setClicked(true);
       setTimeout(() => {
         setClicked(false);
       }, 600);
     }
-
-    // switch (e.detail) {
-    //   case 1:
-    //     console.log("click");
-    //     break;
-    //   case 2:
-    //     console.log("double click");
-    //     break;
-    //   case 3:
-    //     console.log("triple click");
-    //     break;
-    // }
   }
-  console.log("props", props);
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
     <>

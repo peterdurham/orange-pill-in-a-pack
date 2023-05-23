@@ -1,5 +1,5 @@
 import Layout from "@/components/layout";
-import CardList from "@/components/CardList";
+import CardImages from "@/components/CardImages";
 import styled from "styled-components";
 import Head from "next/head";
 import seriesOneList from "../../data/series-1-list.json";
@@ -36,7 +36,7 @@ const HeadlineWrapper = styled.div`
   }
 `;
 
-const Cards = () => {
+const Images = () => {
   return (
     <>
       <Head>
@@ -46,11 +46,11 @@ const Cards = () => {
         <meta name="description" content="" />
         <meta
           name="description"
-          content="Card List for Orange Pill in a Pack Bitcoin Trading Cards"
+          content="Card Images for Orange Pill in a Pack Bitcoin Trading Cards"
         />
         <meta
           name="keywords"
-          content="Bitcoin Trading Cards, Orange Pill in a Pack, FUD Busters, btc-tc, card lists, set lists, booster packs, btc-tc listings, btc-tc marketplace, Pacific Bitcoin"
+          content="Bitcoin Trading Cards, Orange Pill in a Pack, btc-tc, card images, set lists, booster packs, Pacific Bitcoin"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.orangepillinapack.com/" />
@@ -75,10 +75,10 @@ const Cards = () => {
             Series 1 - {seriesOneList.length} cards
           </div>
         </HeadlineWrapper>
-        <CardList setList={seriesOneList} />
+        <CardImages setList={seriesOneList} />
       </Layout>
     </>
   );
 };
 
-export default Cards;
+export default Images;

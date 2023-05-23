@@ -2,7 +2,9 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const ListingWrapper = styled.div`
-  border-bottom: 1px solid rgb(209, 213, 219);
+  &:not(:last-child) {
+    border-bottom: 1px solid rgb(209, 213, 219);
+  }
 
   .listing-price {
     width: 20%;
@@ -61,7 +63,6 @@ const Listing = ({
   sellerName,
   sellerURL,
 }) => {
-  console.log("type", type);
   return (
     <ListingWrapper className="listing">
       <Link target="_blank" href={url}>

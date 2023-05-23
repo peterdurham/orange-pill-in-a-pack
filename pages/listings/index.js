@@ -12,7 +12,7 @@ const listings = [
 ];
 
 const ListingsWrapper = styled.div`
-  width: 720px;
+  width: 800px;
   margin: 20px auto;
   border: 1px solid #dee3e7;
   border-radius: 16px;

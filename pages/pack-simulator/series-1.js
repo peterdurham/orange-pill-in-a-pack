@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import seriesOneList from "../data/series-1-list.json";
-import CardStack from "../components/card-stack";
+import seriesOneList from "../../data/series-1-list.json";
+import CardStack from "../../components/card-stack";
 import Layout from "@/components/layout";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import styled from "styled-components";
-import * as gtag from "../lib/gtag";
+import * as gtag from "../../lib/gtag";
 
 const PackWrapper = styled.div`
   text-align: center;
@@ -13,7 +13,7 @@ const PackWrapper = styled.div`
     width: 170px;
     height: 285px;
     cursor: pointer;
-    margin: 16px auto;
+    margin: 32px auto;
     position: absolute;
     top: 200px;
     transform: translate(-50%, -50%);
@@ -26,7 +26,7 @@ const PackWrapper = styled.div`
   }
   & .click-text {
     position: absolute;
-    top: 88px;
+    top: 104px;
     left: 50%;
     z-index: 10;
     font-weight: 600;
@@ -115,7 +115,6 @@ const RandomPack = () => {
             boxShadow: isPackEmpty
               ? "0 12.5px 100px -10px rgba(50, 50, 73, 0.3), 0 10px 10px -10px rgba(50, 50, 73, 0.3)"
               : "none",
-            // margin: "0 auto",
           }}
           onClick={() => {
             setClicked(true);
@@ -133,20 +132,6 @@ const RandomPack = () => {
           setIsPackEmpty={setIsPackEmpty}
         />
       )}
-
-      {/* <div style={{ margin: "16px auto", width: "150px" }}>
-        <Link
-          href="/random-pack"
-          onClick={() => {
-            setClicked(true);
-            setTimeout(() => {
-              setClicked(false);
-            }, 200);
-          }}
-        >
-          <Button>New Pack</Button>
-        </Link>
-      </div> */}
     </Layout>
   );
 };
