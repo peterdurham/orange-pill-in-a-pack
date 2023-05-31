@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import seriesOneList from "../../data/series-1-list.json";
-import activeListings from "../../data/active-listings.json";
 import styled from "styled-components";
 import Layout from "@/components/layout";
 import CardNavigation from "@/components/CardNavigation";
-import Listing from "@/components/Listing";
 
 const CardNaivgationWrapper = styled.div`
   display: none;
@@ -129,10 +126,6 @@ export default function Page({ card }) {
   const twitterURL = `https://www.orangepillinapack.com/series-1/${card.slug}`;
   const imageURL = `https://www.orangepillinapack.com/images/cards/series-1/`;
 
-  const listings = activeListings.filter(
-    (listing) => listing.slug === card.slug
-  );
-
   let prevCard, nextCard;
 
   seriesOneList.forEach((setCard) => {
@@ -239,25 +232,6 @@ export default function Page({ card }) {
       <CardNaivgationWrapper>
         <CardNavigation nextCard={nextCard} prevCard={prevCard} />
       </CardNaivgationWrapper>
-      {listings.length > 0 && (
-        <ListingsWrapper>
-          <h1 style={{ padding: "16px" }} className="page-header">
-            Current Listings
-          </h1>
-
-          {listings.map((listing, index) => (
-            <Listing
-              key={index}
-              url={listing.url}
-              imageURL={listing.imageURL}
-              title={listing.title}
-              price={listing.price}
-              sellerName={listing.sellerName}
-              sellerURL={listing.sellerURL}
-            />
-          ))}
-        </ListingsWrapper>
-      )}
     </Layout>
   );
 }
